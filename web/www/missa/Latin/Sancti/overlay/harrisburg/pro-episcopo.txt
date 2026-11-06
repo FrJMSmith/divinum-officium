@@ -1,0 +1,14 @@
+[Officium]
+Pro Episcopo
+
+[Oratio]
+Deus, ómnium fidélium pastor et rector, fámulum tuum Timótheum Christiánum Seniórem, quem pastórem Ecclésiæ Harrisburgensis præésse voluísti, propítius réspice: da ei, quǽsumus, verbo et exémplo, quibus præest, profícere; ut ad vitam, una cum grege sibi crédito, pervéniat sempitérnam.
+$Per Dominum
+
+[Secreta]
+Oblátis, quǽsumus, Dómine, placáre munéribus: et fámulum tuum Timótheum Christiánum Seniórem, quem pastórem Ecclésiæ Harrisburgensis præésse voluísti, assídua protectióne gubérna.
+$Per Dominum
+
+[Postcommunio]
+Hæc nos, quǽsumus, Dómine, divíni sacraménti percéptio prótegat: et fámulum tuum Timótheum Christiánum Seniórem, quem pastórem Ecclésiæ Harrisburgensis præésse voluísti; una cum commísso sibi grege, salvet semper et múniat.
+$Per Dominum

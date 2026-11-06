@@ -1,0 +1,4 @@
+# Diocese of Harrisburg, over the FSSP layer.
+# 25 April and 31 July are collects pro Episcopo under one conclusion, not feasts.
+03-17=overlay/harrisburg/03-17
+05-14=overlay/harrisburg/05-14

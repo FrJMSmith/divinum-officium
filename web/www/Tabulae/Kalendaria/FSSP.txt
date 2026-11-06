@@ -1,0 +1,6 @@
+# Priestly Fraternity of St. Peter, over the 1962 USA layer.
+# 18 January and 5 November are IV class Masses only; see ParticularCalendar.pm.
+# 1 August keeps St. Peter in Chains (08-01) in place of the 1962 Machabees (08-01r).
+02-22=overlay/fssp/02-22
+03-07=overlay/fssp/03-07
+08-01=08-01

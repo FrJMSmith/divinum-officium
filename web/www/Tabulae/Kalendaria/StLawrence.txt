@@ -1,0 +1,6 @@
+# St. Lawrence Church, Harrisburg, over the diocesan layer.
+# 11 October is kept as I class: the parish table exercises the option
+# for the patronal feast of the association Mater Dei.
+04-20=overlay/stlawrence/04-20
+08-10=overlay/stlawrence/08-10
+10-11=overlay/stlawrence/10-11

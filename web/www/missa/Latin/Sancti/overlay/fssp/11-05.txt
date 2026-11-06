@@ -1,0 +1,21 @@
+@Commune/C9
+
+[Officium]
+Missa cotidiana Defunctorum pro defunctis Sodalitatis S. Petri et Confraternitatis
+
+[Rank]
+;;IV classis;;1.2
+
+[Rule]
+no Gloria
+no Credo
+Prefatio=Defunctorum
+
+[Oratio]
+@Commune/C9:Oratio2
+
+[Secreta]
+@Commune/C9:Secreta2
+
+[Postcommunio]
+@Commune/C9:Postcommunio2

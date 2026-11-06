@@ -53,6 +53,9 @@ sub liturgical_color {
   return 'black' if (/(?:Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i);
   return 'green' if (/(?:Pentecosten(?!.*infra octavam)|Epiphaniam|post octavam)/i);
   return 'red' if (/(?:Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i);
+
+  # Missale Romanum, Missa votiva pro pace: violet vestments.
+  return 'purple' if (/pro pace/i);
   return 'black';
 }
 1;

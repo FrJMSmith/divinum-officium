@@ -1,0 +1,14 @@
+@Sancti/01-18
+
+[Officium]
+In Cathedra S. Petri Antiochiæ
+
+[Rank]
+;;IV classis;;1.2;;ex C4
+
+[Rule]
+ex C4
+no Gloria
+no Credo
+Prefatio=Apostolis
+Sub unica conclusione

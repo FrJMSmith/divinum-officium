@@ -1,0 +1,18 @@
+@Commune/C8
+
+[Officium]
+In Dedicatione Ecclesiæ Cathedralis Harrisburgensis
+
+[Rank]
+;;Duplex I classis;;6;;ex C8
+
+[Rule]
+ex C8
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+
+[Rule] (ad missam)
+Gloria
+Credo
+Prefatio=Dedicatio

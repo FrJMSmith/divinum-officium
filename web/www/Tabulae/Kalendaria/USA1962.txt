@@ -1,0 +1,12 @@
+# 1962 days proper to the United States on this particular calendar.
+# This is not Kalendaria/NC.txt. That file is Rubrics 1960 - 2020 USA
+# and adds later optional feasts (Chanel, Fatima, Goretti, Padre Pio, and others)
+# which this parish list does not keep.
+# Ranks are the numeric ranks already in the 1962 *n files (2 or 3 = III class
+# under rubrica 196). Secret and Postcommunion of Guadalupe are not in 12-12n,
+# so they come from the Common of the Blessed Virgin (vide C11).
+09-09=09-09n~09-09
+09-26=09-26n~09-26
+10-25=10-25n~10-25
+11-13=11-13n~11-13
+12-12=12-12n

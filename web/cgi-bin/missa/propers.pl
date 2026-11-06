@@ -9,6 +9,7 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 
 use DivinumOfficium::Directorium qw(check_coronatio);
+use DivinumOfficium::ParticularCalendar qw(episcopal_collect_file);
 
 # Defines ScriptFunc attributes.
 use DivinumOfficium::Scripting;
@@ -252,6 +253,20 @@ sub oratio {
     my $c = $c{$type};
     $c = replaceNpb($c, $pope, $lang, 'p', 'um') if $coron =~ /Coronatio/i;
     $retvalue .= "_\n\$Papa\n$c";
+  }
+
+  # Missal nn. 449-450: collect pro Episcopo under one conclusion, except
+  # Masses of the dead and the days numbered 1, 2, 3 and 8. When impeded,
+  # the collect is said on the next day that is not one of those days.
+  if (
+    (my $episcopus = episcopal_collect_file($version, $day, $month, $year))
+    && $votive !~ /Defunct|C9/i
+    && $winner{Rank} !~ /Defunctorum/i
+  ) {
+    $retvalue =~ s/\$(Per|Qui) .*\n//gi;
+    my %ep = %{setupstring($lang, $episcopus)};
+    my $ep_text = $ep{$type};
+    $retvalue .= "_\n!Pro Episcopo\n$ep_text" if $ep_text;
   }
 
   if ($rule =~ /omit .*? commemoratio/i

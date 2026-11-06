@@ -7,6 +7,10 @@ Divino Afflatu - 1954,1954,1954,1954,Divino Afflatu - 1939,Divino Afflatu - 1939
 Reduced - 1955,1955,1960,DA,Divino Afflatu - 1954
 Rubrics 1960 - 1960,1960,1960,1960,Reduced - 1955
 Rubrics 1960 - 2020 USA,NC,Newcal,Newcal,Rubrics 1960 - 1960
+Rubrics 1960 - USA 1962,USA1962,USA1962,1960,Rubrics 1960 - 1960,Rubrics 1960 - 1960
+Rubrics 1960 - FSSP,FSSP,FSSP,1960,Rubrics 1960 - USA 1962,Rubrics 1960 - USA 1962
+Rubrics 1960 - Harrisburg,Harrisburg,Harrisburg,1960,Rubrics 1960 - FSSP,Rubrics 1960 - FSSP
+Rubrics 1960 - St. Lawrence,StLawrence,StLawrence,1960,Rubrics 1960 - Harrisburg,Rubrics 1960 - Harrisburg
 Monastic Tridentinum 1617,M1617,M1617,M1617,Tridentine - 1570
 Monastic Divino 1930,M1930,M1930,M1930,Monastic Tridentinum 1617
 Monastic - 1963,M1963,M1963,M1963,Monastic Divino 1930

@@ -41,3 +41,5 @@ dirge1=02-18;;1888 1906
 dirge2=03-04 03-11 05-20 06-01;;1570
 dirge2=03-04 06-01;;M1617
 dirge2=03-11 05-22 06-01;;1888 1906
+04-03=overlay/harrisburg/03-17;;Harrisburg
+05-20=overlay/harrisburg/05-14;;Harrisburg

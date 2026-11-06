@@ -125,6 +125,27 @@ sub load_tempora {
   }
 }
 
+#*** ancestor_transfer_tags($version)
+# transfer-field tags of the tbase chain, nearest ancestor first.
+# Used so a particular calendar can add ;;FSSP lines without copying the
+# 1960 transfer tables. Matching is the same word-boundary test as a version
+# whose own transfer tag is that ancestor, so a tag of "1960" still sees
+# "1960 Newcal" and still does not see a bare "Newcal" line.
+sub ancestor_transfer_tags {
+  my ($version) = @_;
+  my @tags;
+  my %seen = ($version => 1);
+  my $v = $_data{$version}{tbase};
+
+  while ($v && !$seen{$v} && $_data{$v}) {
+    $seen{$v} = 1;
+    my $tag = $_data{$v}{transfer} // '';
+    push @tags, $tag if $tag ne '' && !grep { $_ eq $tag } @tags;
+    $v = $_data{$v}{tbase};
+  }
+  return @tags;
+}
+
 #*** load_transfers($version, $year, $stransferf)
 # load transfer table by type based on easterday
 sub load_transfers {
@@ -161,18 +182,32 @@ sub load_transfers {
       push(@lines, load_transfer_file($easter, 2, $type, $dioecesis));
     }
 
-    my (@transfer) = ();
+    # A particular calendar's transfer tag (FSSP, Harrisburg, …) is stacked on
+    # the tags of its tbase chain. Lines tagged for an ancestor are filled in
+    # first; a line tagged for this version, or left untagged, replaces them.
+    # Stransfer is not stacked: those versions name the 1960 scripture table
+    # directly, and walking tbase would also pull pre-1960 scripture tags.
+    my @transfer;
+    my %inherited;
+    my $tag = $_data{$version}{lc($type)} // '';
+    my @ancestor = $type eq 'Transfer' ? ancestor_transfer_tags($version) : ();
 
     foreach (@lines) {
       my ($line, $ver) = split(/\s*;;\s*/);
       next unless $line;
 
-      if (!$ver || ($ver =~ /\b$_data{$version}{lc($type)}\b/)) {
+      my $own = !$ver || ($tag ne '' && $ver =~ /\b\Q$tag\E\b/);
+
+      if ($own) {
         push(@transfer, split(/=/, $line, 2));
+      } elsif ($ver && grep { $ver =~ /\b\Q$_\E\b/ } @ancestor) {
+        my ($key, $val) = split(/=/, $line, 2);
+        $inherited{$key} = $val if defined $val;
       }
     }
 
-    %{$_dCACHE{$cache_key}} = @transfer;
+    my %own = @transfer;
+    %{$_dCACHE{$cache_key}} = (%inherited, %own);
 
   }
 

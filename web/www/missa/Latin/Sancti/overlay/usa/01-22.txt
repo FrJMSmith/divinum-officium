@@ -1,0 +1,55 @@
+[Officium]
+Missa votiva pro pace
+
+[Rank]
+;;IV classis;;1.2
+
+[Rule]
+no Gloria
+no Credo
+
+[Introitus]
+!Eccli 36:18
+v. Da pacem, Dómine, sustinéntibus te, ut prophétæ tui fidéles inveniántur: exáudi preces servi tui, et plebis tuæ Israël.
+!Ps 121:1
+Lætátus sum in his, quæ dicta sunt mihi: in domum Dómini íbimus.
+&Gloria
+v. Da pacem, Dómine, sustinéntibus te, ut prophétæ tui fidéles inveniántur: exáudi preces servi tui, et plebis tuæ Israël.
+
+[Oratio]
+Deus, a quo sancta desidéria, recta consília et justa sunt ópera: da servis tuis illam, quam mundus dare non potest, pacem; ut et corda nostra mandátis tuis dédita, et, hóstium subláta formídine, témpora sint, tua protectióne, tranquílla.
+$Per Dominum
+
+[Lectio]
+Léctio libri Machabæórum
+!2 Mach 1:1-5
+Frátribus, qui sunt per Ægýptum, Judǽis, fratres, qui sunt in Jerosólymis, Judǽi, et qui in regióne Judǽæ, pacem bonam. Benefáciat vobis Deus, et recordétur testaménti sui, quod locútus est ad Abraham et Isaac et Jacob, servórum suórum fidélium: et det vobis cor ómnibus, ut colátis eum et faciátis ejus voluntátem corde magno et ánimo volénti. Adapériat cor vestrum in lege sua et in præcéptis suis, et fáciat pacem. Exáudiat oratiónes vestras, et reconciliétur vobis, nec vos déserat in témpore malo, Dóminus Deus noster.
+
+[Graduale]
+!Ps 121:6-7
+Rogáte quæ ad pacem sunt Jerúsalem: et abundántia diligéntibus te.
+V. Fiat pax in virtúte tua: et abundántia in túrribus tuis.
+Allelúja, allelúja.
+!Ps 147:12
+Lauda, Jerúsalem, Dóminum: lauda Deum tuum, Sion. Allelúja.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Joánnem
+!Joann 20:19-23
+In illo témpore: Cum sero esset die illo, una sabbatórum, et fores essent clausæ, ubi erant discípuli congregáti propter metum Judæórum: venit Jesus, et stetit in médio, et dixit eis: Pax vobis. Et cum hoc dixísset, osténdit eis manus et latus. Gavísi sunt ergo discípuli, viso Dómino. Dixit ergo eis íterum: Pax vobis. Sicut misit me Pater, et ego mitto vos. Hæc cum dixísset, insufflávit, et dixit eis: Accípite Spíritum Sanctum: quorum remiséritis peccáta, remittúntur eis; et quorum retinuéritis, reténta sunt.
+
+[Offertorium]
+!Ps 134:3; 134:6
+Laudáte Dóminum, quia benígnus est: psállite nómini ejus, quóniam suávis est: ómnia quæcúmque vóluit, fecit in cælo et in terra.
+
+[Secreta]
+Deus, qui credéntes in te pópulos nullis sinis cóncuti terróribus: dignáre preces et hóstias dicátæ tibi plebis suscípere; ut pax, a tua pietáte concéssa, christianórum fines ab omni hoste fáciat esse secúros.
+$Per Dominum
+
+[Communio]
+!Joann 14:27
+Pacem relínquo vobis: pacem meam do vobis, dicit Dóminus. (Allelúja.)
+
+[Postcommunio]
+Deus, auctor pacis et amátor, quem nosse vívere, cui servíre regnáre est: prótege ab ómnibus impugnatiónibus súpplices tuos; ut, qui in tua protectióne confídimus, nullíus hostilitátis arma timeámus.
+$Per Dominum

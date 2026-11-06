@@ -11,6 +11,7 @@ use lib "$Bin/..";
 use DivinumOfficium::Scripting qw(dispatch_script_function parse_script_arguments);
 use DivinumOfficium::Date qw(getweek leapyear geteaster get_sday nextday day_of_week monthday);
 use DivinumOfficium::Directorium qw(get_from_directorium transfered );
+use DivinumOfficium::ParticularCalendar qw(ordo_note mass_file);
 
 sub error {
   my $t = shift;
@@ -827,6 +828,12 @@ sub occurrence {
   }
 
   if ($month == 1 && $day < 14 && $officename[0] !~ /Epi/i) { $officename[0] = "Nat$day"; }
+
+  # IV class votive Masses of this particular calendar are not an office.
+  # The note is so the Ordo names them; precedence() swaps the Mass text.
+  if (!$tomorrow && (my $note = ordo_note($version, $day, $month, $rank))) {
+    $officename[2] .= ($officename[2] ? ' & ' : '') . $note;
+  }
 
   if ($tomorrow) {
     @tomorrowname = @officename;
@@ -1652,6 +1659,16 @@ sub precedence {
     setChantTone();
   }
 
+  if ($missa && (my $alt = mass_file($version, $day, $month, $rank))) {
+    if (-e "$datafolder/Latin/$alt") {
+      $winner = $alt;
+      $commune = '';
+      $communetype = '';
+      our $votive;
+      $votive = 'Defunct' if $alt =~ /11-05/;
+    }
+  }
+
   if ($winner) {
     if ($missa && $missanumber) {
       my $wm = $winner;
@@ -1675,6 +1692,16 @@ sub precedence {
       $commune = 'Tempora/Epi1-0a.txt';
     }
     $rule = $winner{Rule};
+
+    if ($missa && $winner =~ m{overlay/(?:usa/01-22|fssp/01-18|fssp/11-05)}) {
+      my @nr = split(';;', $winner{Rank});
+      $rank = $nr[2] if defined $nr[2] && $nr[2] ne '';
+      $dayname[1] = $nr[0] if $nr[0];
+
+      if (my ($new_ct, $new_c) = extract_common($nr[3], $rank, $version, $dayname[0] =~ /Pasc/)) {
+        ($communetype, $commune) = ($new_ct, $new_c);
+      }
+    }
 
     if ($winner =~ /12-28/ && $dayofweek == 0) {
       $rule =~ s/no Te Deum//;

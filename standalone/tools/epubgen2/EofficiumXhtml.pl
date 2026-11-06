@@ -91,6 +91,7 @@ use lib "$Bin/../../../web/cgi-bin";
 use DivinumOfficium::LanguageTextTools qw(load_languages_data);
 use DivinumOfficium::RunTimeOptions qw(check_version check_language);
 use DivinumOfficium::Date qw(prevnext);
+use DivinumOfficium::Xhtml qw(xhtml_escape);
 
 binmode(STDOUT, ':encoding(utf-8)');
 
@@ -106,7 +107,8 @@ sub build_comment_line_xhtml() {
   our ($comment, $marian_commem);
 
   my $commentcolor = ($dayname[2] =~ /(Feria)/i) ? '' : ($marian_commem && $dayname[2] =~ /^Commem/) ? ' rb' : ' m';
-  $comment = ($dayname[2]) ? "<span class=\"s$commentcolor\">$dayname[2]</span>" : "";
+  my $line = xhtml_escape($dayname[2]);
+  $comment = ($dayname[2]) ? "<span class=\"s$commentcolor\">$line</span>" : "";
 }
 
 #get parameters
@@ -358,6 +360,7 @@ PrintTag
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
   my $head = shift;
+  $headline = xhtml_escape($headline);
   if ($headline =~ /\!/) { $headline = $` . "<FONT SIZE=\"1\">" . $' . "</FONT>"; }
   my $h = ($hora =~ /(Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium)/i) ? $hora : '';
   my $daten = prevnext($date1, 1);

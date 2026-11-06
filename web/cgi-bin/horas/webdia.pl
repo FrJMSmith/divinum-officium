@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use utf8;
 use DivinumOfficium::Lexicon qw(apply_interlinear);
+use DivinumOfficium::Xhtml qw(xhtml_escape);
 
 # Name : Laszlo Kiss
 # Date : 01-11-04
@@ -980,9 +981,12 @@ sub bottom_links_menu {
 sub html_dayhead {
   my ($head, $subhead) = @_;
 
-  my $output = setfont(liturgical_color($head), $head);
+  # Escape before the tags below are wrapped around the text. <br/> and <i>
+  # already in these fields are left in place by xhtml_escape().
+  my $output = setfont(liturgical_color($head), xhtml_escape($head));
 
   if ($subhead) {
+    $subhead = xhtml_escape($subhead);
     my ($pre, $main) = split(/: /, $subhead, 2);           # Split the pre-position from office title
     my ($main, $vespera) = split(/\<br\/\>/, $main, 2);    # Split any Vespers information
     $main =~ s/\(Scriptura ut in\: (.*)\)//;               # Save any Scripture transfer information
@@ -996,7 +1000,6 @@ sub html_dayhead {
       if $scripturaUt && $hora eq 'Matutinum';
     $output .= "</SPAN></I>\n";
   }
-  $output =~ s/\s\&\s/ &amp; /;    # HTML - ampersand
   $output;
 }
 

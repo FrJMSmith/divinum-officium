@@ -60,6 +60,12 @@ Examples
 
  `./epubgen2.sh -y 2023 -t 2024 -r DA`
 
+### Using the St. Lawrence particular calendar for 2027
+
+ `./epubgen2.sh -y 2027 -r StLawrence`
+
+`-r StLawrence` selects the version named `Rubrics 1960 - St. Lawrence` (the full parish stack). The same switch also accepts `USA1962`, `FSSP`, and `Harrisburg` for the layers under that calendar. The version name is percent-encoded when it is passed to the generator. Files are written as `output/breviarium2027_StLawrence.epub` and `output/breviarium2027-MM_StLawrence.epub`.
+
 Converting EPUB to MOBI
 ----------------
 

@@ -40,7 +40,7 @@ OPTIONS:
    -m          Generate Mass propers in addition to office texts.
 
    -r RUBRICS  The rubrics to use. Defaults to 1960.
-               Supported values are: 1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican
+               Supported values are: 1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican USA1962 FSSP Harrisburg StLawrence
 
    -c FILENAME The cover image to use without path. It must be a file in the data
                directory. Defaults to "cover.jpg".
@@ -81,15 +81,35 @@ OPTIONAL_KINDLEGEN_PATH=/usr/local/bin/kindlegen #full path to kindlegen executa
 
 #constants
 #supported rubrics as in Eofficium.pl
-ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican)
-ALL_RUBRICS=("Tridentine - 1570" "Tridentine - 1888" "Tridentine - 1906" "Divino Afflatu - 1954" "Reduced - 1955" "Rubrics 1960 - 1960" "Rubrics 1960 - 2020 USA" "Monastic - 1617" "Monastic - 1930" "Monastic - 1963" "Ordo Cisterciensis - 1951" "Ordo Cisterciensis - Abbatia B.M.V. de Altovado" "Ordo Praedicatorum - 1962")
-ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP)
+#USA1962, FSSP, Harrisburg and StLawrence are the stacked 1962 particular calendars
+#(see web/www/Tabulae/data.txt). StLawrence is the full parish stack.
+ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican USA1962 FSSP Harrisburg StLawrence)
+ALL_RUBRICS=("Tridentine - 1570" "Tridentine - 1888" "Tridentine - 1906" "Divino Afflatu - 1954" "Reduced - 1955" "Rubrics 1960 - 1960" "Rubrics 1960 - 2020 USA" "Monastic - 1617" "Monastic - 1930" "Monastic - 1963" "Ordo Cisterciensis - 1951" "Ordo Cisterciensis - Abbatia B.M.V. de Altovado" "Ordo Praedicatorum - 1962" "Rubrics 1960 - USA 1962" "Rubrics 1960 - FSSP" "Rubrics 1960 - Harrisburg" "Rubrics 1960 - St. Lawrence")
+ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP _USA1962 _FSSP _Harrisburg _StLawrence)
 
 # Languages
 ALL_LANGUAGES_CODES=(cs da de en es fr it la la-bea hu nl pl pt pl-new)
 ALL_LANGUAGES_NAMES=(Czech Danish German English Spanish French Italian Latin Latin-Bea Hungarian Dutch Polish Portuguese Polish-Newer)
 
 YEAR_RE='^[0-9]+$'
+
+# Percent-encode a version name for the query string passed to EofficiumXhtml.pl.
+# The default RUBRICS value is already encoded; -r names are plain text and are
+# encoded here so spaces (and any other reserved characters) survive the request.
+urlencode() {
+	local LC_ALL=C
+	local s=$1 i c o encoded=
+	local -i n=${#s}
+	for ((i = 0; i < n; i++)); do
+		c=${s:i:1}
+		case $c in
+			[A-Za-z0-9.~_-]) o=$c ;;
+			*) printf -v o '%%%02X' "'$c" ;;
+		esac
+		encoded+=$o
+	done
+	printf '%s' "$encoded"
+}
 
 #parse parameters
 while getopts "hy:t:pvmr:c:o:l:b:f" OPTION
@@ -128,7 +148,7 @@ do
              #make sure the value is one of the expected values
              for i in $(seq 0 ${#ALL_RUBRICS_CODES[@]}); do
                 if [[ ${ALL_RUBRICS_CODES[$i]} == $RUBRICS_CODE ]]; then
-                  RUBRICS=${ALL_RUBRICS[$i]}
+                  RUBRICS=$(urlencode "${ALL_RUBRICS[$i]}")
                   RUBRICS_NAME=${ALL_RUBRICS_NAME[$i]}
                   continue 2
                 fi

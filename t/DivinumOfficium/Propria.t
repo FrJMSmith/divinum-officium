@@ -10,8 +10,8 @@ use Test::More;
 my @errors = validate_propria();
 ok(!@errors, 'propria records match the loader') or diag join("\n", @errors);
 
-is(scalar(propria_versions()), 4, 'four selectable versions');
-is(scalar(propria_entries()), 18, 'eighteen in-use records and no proposals');
+is(scalar(propria_versions()), 6, 'six selectable versions');
+is(scalar(propria_entries()), 34, 'in-use records include Mexico and Guadalajara');
 
 my @not_in_use = grep { ($_->{status} || '') ne 'in-use' } propria_entries();
 ok(!@not_in_use, 'loaded entries are in use');

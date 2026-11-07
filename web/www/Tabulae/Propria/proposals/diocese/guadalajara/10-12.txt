@@ -1,5 +1,5 @@
 id: draft-gdl-10-12
-layer: guadalajara
+layer: guadalajara-note
 scope: diocese
 date: 10-12
 title: S. Mariæ Virg. de Zapopan
@@ -22,4 +22,4 @@ stack: 1960,mexico,fssp,guadalajara,apostolate
 provenance: owner-supplied
 evidence: heading on printed p. 46
 independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; no separate imprint is printed
-source: Heading gives I class. The heading does not use a national title, so the record stays in this diocese directory. Wider scope is still pending. No text is copied. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.
+source: Heading gives I class. The heading does not use a national title, so the record stays in this diocese directory. Wider scope is still pending. The Office text, where the heading prints one, is in the overlay file named by the in-use record. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.

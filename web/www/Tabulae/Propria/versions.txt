@@ -45,3 +45,27 @@ transfer: StLawrence
 stransfer: 1960
 base: Rubrics 1960 - Harrisburg
 status: in-use
+---
+id: mexico
+version: Rubrics 1960 - Mexico
+layer: mexico
+scope: country
+layers: mexico
+kalendar: Mexico
+transfer: Mexico
+stransfer: 1960
+base: Rubrics 1960 - 1960
+office_only: yes
+status: in-use
+---
+id: guadalajara
+version: Rubrics 1960 - Guadalajara
+layer: guadalajara
+scope: diocese
+layers: mexico,guadalajara
+kalendar: Guadalajara
+transfer: Guadalajara
+stransfer: 1960
+base: Rubrics 1960 - Mexico
+office_only: yes
+status: in-use

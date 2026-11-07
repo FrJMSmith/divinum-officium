@@ -1,0 +1,13 @@
+@Commune/C11
+
+[Officium]
+S. Mariæ Virg. de Zapopan
+
+[Rank]
+;;Duplex I classis;;6;;ex C11
+
+[Rule]
+ex C11;
+Psalmi Dominica
+9 lectiones
+Antiphonas horas

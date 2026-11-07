@@ -1,0 +1,15 @@
+id: gdl-10-12
+layer: guadalajara
+scope: diocese
+date: 10-12
+title: S. Mariæ Virg. de Zapopan
+rank: 6
+rank_name: Duplex I classis
+office: yes
+mass: no
+kalendar: overlay/guadalajara/10-12
+provenance: owner-supplied
+status: in-use
+evidence: owner-approved Officia propria, 2026-11-06 by Fr. Smith
+independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; imprint pending
+source: Selectable Office. The kalendar line is 10-12=overlay/guadalajara/10-12. Mass propers were not in the source and are not supplied. Spellings follow the PDF text layer.

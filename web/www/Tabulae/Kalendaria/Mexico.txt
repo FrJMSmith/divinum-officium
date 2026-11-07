@@ -1,0 +1,4 @@
+# National Mexico days from the Guadalajara Officia propria.
+# Only Dec 12 carries the national heading. No USA days are inherited.
+# Source records: Tabulae/Propria/country/mexico/.
+12-12=overlay/mexico/12-12

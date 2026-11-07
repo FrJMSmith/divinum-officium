@@ -1,0 +1,267 @@
+@Commune/C4
+
+[Officium]
+S. Turibii de Mogrovejo
+
+[Rank]
+;;Duplex II classis;;5;;ex C4
+
+[Rule]
+ex C4;
+Psalmi Dominica
+9 lectiones
+Antiphonas horas
+
+[Oratio]
+Ecclésiam tuam, Dómine, beáti Turíbii Confessóris tui atque Pontíficis contínua protectióne custódi: ut sicut illum pastorális sollicitúdo gloriósum réddidit; ita nos ejus intercéssio in tuo semper fáciat amóre fervéntes.
+$Per Dominum
+
+[Ant 2]
+Quasi thus rédolens in diébus æstátis, quasi ignis effúlgens et thus ardens in igne, allelúja.
+
+[Ant 3]
+Quasi olíva púllulans et cypréssus in altitúdinem se extóllens, in accipiéndo ipsum stolam glóriæ, et vestíri eum in consummatiónem virtútis ; in ascénsu altáris sancti, glóriam dedit sanctitátis amíctum, allelúja.
+
+[Hymnus Matutinum]
+Turíbii redit sacra
+Dies : Parénti público
+Limána plaudat cívitas
+Et vota reddat ánnua.
+Gente a vetústa nóbilis
+Mundána sprevit ómnia,
+Servíre Christo dígnius
+Ratus, crucémque súbsequi
+Hinc denegávit córpori,
+Quæcúmque mentis ímprobat
+Lex, et flagéllis cóntudit,
+Ne forte contra assúrgeret.
+Limána nullum cívitas
+Hoc sanctiórem Præsulem,
+Benigniórem squálidi
+Sensére nullum páuperes.
+Nunc ergo te canéntibus
+Turíbi, adésto cívibus,
+Et quos amásti, fírmiter
+Horum nepótes prótege.
+Qui suscitásti mórtuos,
+Fontes petísti ex árido,
+Nos morte serva críminum,
+Exple salútis fóntibus.
+Te protegénte e fínibus
+Nostris facéssant prælia;
+Nec mota terra aut æquora
+Cives domósque absórbeant.
+Malígna fébrium cohors,
+Quæ nostra vastat óppida,
+Nocére nobis, súpplices
+Qui te precámur, désinat.
+Ut, te adjuvánte, páriter
+Post acta vitæ hic témpora,
+Intráre tandem cælicæ
+Possímus aulæ in gáudia.
+Almo Parénti, et Fílio,
+Tibíque, Sancte Spíritus,
+Honor decúsque et glória
+Sit nunc et omne in sæculum.
+Amen.
+
+[Lectio1]
+Lectio iv
+Turíbius Alfónsus ex nóbili a
+Mogrovéja gente Majórgæ in regno
+Legiónis natus, liberálibus
+disciplínis, et juri canónico
+Vallisoléti primum, deínde
+Salmánticæ in majóri collégio
+Oveténsi sancti Salvatóris, ita
+óperam dedit, ut tamen potiórem
+témporis partem oratióni aliísque
+piis et christiánis exercítiis
+impénderet. Id comprobátum est,
+cum immíssam in ejus cubículum
+impudícam mulíerem, præcípuus
+virginitátis sectátor constánti ánimo
+extémplo éxpulit: inde jejúniis,
+vigíliis, et próprii córporis
+castigatióne contínuo vitam
+exércuit, et nudis quoque pédibus
+Compostéllam ad sancti Jacóbi
+sepúlcrum peregrinátus est.
+
+[Responsory1]
+R. Invéni David servum meum, óleo
+sancto meo unxi eum : * Manus enim
+mea auxiliábitur ei, allelúja. V. Nihil
+profíciet inimícus in eo, et fílius
+iniquitátis non nocébit ei. Manus
+enim.
+
+[Lectio2]
+Lectio v
+A Gregório décimo tértio Limánæ
+ecclésiæ ex quæstóre fídei invítus
+præfícitur : quo in múnere
+apostólicam sollicitúdinem in nova
+christianitáte vel solidánda, vel
+ampliánda ádhibens, perfécti
+præsulis partes explévit. Quare
+síngulis Domínicis diébus, vel in
+ecclésia vel in hospitáli domo, in
+parvis étiam oppídulis, et súbdiu
+concionabátur, plebémque
+catechísmo instruébat. Synodos
+étiam diœcesánas, et provinciália
+concília iuxta Tridentíni statúta
+hábuit, et in eis complúra decréta,
+póstea a Sede apostólica confirmáta,
+cóndita sunt, quibus modo Ecclésia
+Americána régitur. Hinc morum
+emendátio, cleri disciplína, júvenum
+seminária, vírginum ac male
+nuptárum cœnóbia, ægrotórum
+xenodochía, aliæque ædes et templa,
+ejus étiam sumptu constrúcta,
+emanárunt.
+
+[Responsory2]
+R. Pósui adjutórium super
+poténtem, et exaltávi eléctum de
+plebe mea: * Manus enim mea
+auxiliábitur ei, allelúja. V. Invéni
+David servum meum, óleo sancto
+meo unxi eum. Manus enim.
+
+[Lectio3]
+Lectio vi
+Diœcésim suam, amplíssimam
+quidem, incredíbili labóre totam
+sæpe visitávit, omnésque pene
+ecclésiæ suæ provéntus in
+páuperum usus, quos creditóres
+suos vocábat, erogávit, octingéntis,
+ut ferunt, hóminum míllibus sacro
+chrísmate unctis. Innúmeras
+contradictiónes, sive ab iis, qui foris
+sunt, propter fidem, sive ab iis, qui
+intra, propter Ecclésiæ libertátem,
+summa patiéntia sústinens, ácriter
+eam deféndit, martýrii
+cupidíssimus. Tandem sacerdótio, et
+miráculis clarus, quæ étiam post
+mortem ipsius sanctitátem
+comprobárunt, dum própriæ
+diœcésis visitatióni incúmberet,
+anno millésimo sexcentésimo sexto,
+ætátis suæ sexagésimo octávo,
+sumpto in ecclésia sacro viático, ad
+mortis núntium exclámans: Lætátus
+sum in his, quæ dicta sunt mihi : in
+do- mum Dómini íbimus, die
+vigésima tértia Mártii obdormívit in
+Dómino : quem Innocéntius
+undécimus in Beatórum númerum
+rétulit, assignáta ejus festivitáti die
+vigésima séptima Aprílis. Deínde
+novis quam plúribus fulgéntem
+signis, Benedíctus décimus tértius
+Póntifex Máximus quarto Idus
+Decémbris anno salútis millésimo
+septingentésimo vigésimo sexto,
+Sanctórum fastis adscrípsit.
+
+[Responsory3]
+R. Iste est, qui ante Deum magnas
+virtútes operátus est, et omnis terra
+doctrína ejus repléta est : * Ipse
+intercéat pro peccátis ómnium
+populórum, allelúja. V. Iste est, qui
+contémpsit vitam mundi, et pervénit
+ad cæléstia regna. Ipse intercédat.
+Glória Patri. Ipse intercédat.
+
+[Lectio4]
+Lectio vij
+Léctio sancti Evangélii secúndum
+Joánnem
+Cap. 10, 11-16
+In illo témpore : Dixit Jesus
+pharisæis : Ego sum pastor bonus.
+Bonus pastor ánimam suam dat pro
+óvibus suis. Et réliqua.
+Homilía sancti Gregórii Papæ
+Homilia 14 in Evang.
+Audístis, fratres caríssimi, ex
+lectióne evangélica eruditiónem
+vestram ; audístis et perículum
+nostrum. Ecce enim is qui non ex
+accidénti dono, sed essentiáliter
+bonus est, dicit : Ego sum pastor
+bonus. Atque ejúsdem bonitátis
+formam, quam nos imitémur
+adjúngit, dicens : Bonus pastor
+ánimam suam ponit pro óvibus suis.
+Fecit quod mónuit, osténdit quod
+jussit. Bonus pastor pro óvibus suis
+ánimam suam pósuit, ut in
+sacraménto nostro corpus suum et
+sánguinem vérteret, et oves, quas
+redémerat, carnis suæ aliménto
+satiáret.
+
+[Responsory4]
+R. Amávit eum Dóminus, et ornávit
+eum : stolam glóriæ índuit eum, * Et
+ad portas paradísi coronávit eum,
+allelúja. V. Induit eum Dóminus
+lorícam fídei, et ornávit eum. Et ad.
+
+[Lectio5]
+Lectio viij
+Osténsa nobis est de contémptu
+mortis via, quam sequámur :
+appósita est forma, cui imprimámur,
+Primum nobis est, exterióra nostra
+misericórditer óvibus ejus
+impéndere : postrémum vero, si
+necésse sit, étiam mortem nostram
+pro eisdem óvibus ministráre. A
+primo autem hoc mínimo pervenítur
+ad postrémum majus. Sed cum
+incomparabíliter longe sit mélior
+ánima, qua vívimus, quam terréna
+substántia, quam extérius
+possidémus : qui non dat pro óvibus
+substántiam suam, quando pro his
+datúrus est ánimam suam?
+
+[Responsory5]
+R. Sint lumbi vestri præcíncti, et
+lucérnæ ardéntes in mánibus
+vestris : * Et vos símiles homínibus
+exspectántibus dóminum suum,
+quando revertátur a núptiis, allelúja.
+V. Vigiláte ergo, quia nescítis qua
+hora Dóminus vester ventúrus sit. Et
+vos. Glória Patri. Et vos.
+
+[Lectio6]
+Lectio ix
+Et sunt nonnúlli qui, dum plus
+terrénam substántiam, quam oves
+díligunt, mérito nomen pastóris
+perdunt: de quibus prótinus
+súbditur : Mercenárius autem, et qui
+non est pastor, cujus non sunt oves
+própriæ, videt lupum veniéntem, et
+dimíttit oves et fugit. Non pastor,
+sed mercenárius vocátur, qui non
+pro amóre íntimo oves Domínicas,
+sed ad temporáles mercédes pascit.
+Mercenárius quippe est, qui locum
+quidem pastóris tenet, sed lucra
+animárum non quærit : terrénis
+cómmodis ínhiat, honóre
+prælatiónis gaudet, temporálibus
+lucris páscitur, impénsa sibi ab
+homínibus reveréntia lætátur.
+Te Deum.

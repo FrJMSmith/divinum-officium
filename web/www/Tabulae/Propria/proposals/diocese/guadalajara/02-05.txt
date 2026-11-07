@@ -1,5 +1,5 @@
 id: draft-gdl-02-05
-layer: guadalajara
+layer: guadalajara-note
 scope: diocese
 date: 02-05
 title: S. Philippi a Jesu, Martyr
@@ -22,4 +22,4 @@ stack: 1960,mexico,fssp,guadalajara,apostolate
 provenance: owner-supplied
 evidence: heading on printed p. 10
 independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; no separate imprint is printed
-source: Heading gives III class. Wider scope is pending. On 5 Feb 2026, Rubrics 1960 - 1960 kept Sancti/02-05.txt, S. Agathæ, rank 3. How the two headings would occur together is not decided. No text is copied. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.
+source: Heading gives III class. Wider scope is pending. On 5 Feb 2026, Rubrics 1960 - 1960 kept Sancti/02-05.txt, S. Agathæ, rank 3. Rubrics 1960 gives a 3rd class in a particular calendar precedence over a universal 3rd class, so the Office is Philip and Agatha is commemorated. The Office text, where the heading prints one, is in the overlay file named by the in-use record. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.

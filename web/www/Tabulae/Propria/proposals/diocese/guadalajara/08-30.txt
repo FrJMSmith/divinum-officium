@@ -1,5 +1,5 @@
 id: draft-gdl-08-30
-layer: guadalajara
+layer: guadalajara-note
 scope: diocese
 date: 08-30
 title: S. Rosæ a S. Maria, Virg. Limanæ, Patronæ totius Americæ
@@ -22,4 +22,4 @@ stack: 1960,mexico,fssp,guadalajara,apostolate
 provenance: owner-supplied
 evidence: heading on printed p. 37
 independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; no separate imprint is printed
-source: Heading gives I class and the words Patronæ totius Americæ. Those words are not copied onto the Canada or USA layers. On 30 Aug 2025 and 30 Aug 2027, Rubrics 1960 - 1960 kept Sancti/08-30.txt at rank 3. That comparison is a repository observation, not an approval of this heading. No text is copied. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.
+source: Heading gives I class and the words Patronæ totius Americæ. Those words are not copied onto the Canada or USA layers. On 30 Aug 2025 and 30 Aug 2027, Rubrics 1960 - 1960 kept Sancti/08-30.txt at rank 3. That comparison is a repository observation, not an approval of this heading. The Office text, where the heading prints one, is in the overlay file named by the in-use record. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.

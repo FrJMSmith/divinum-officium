@@ -1,5 +1,5 @@
 id: draft-gdl-03-23
-layer: guadalajara
+layer: guadalajara-note
 scope: diocese
 date: 03-23
 title: S. Turibii de Mogrovejo
@@ -22,4 +22,4 @@ stack: 1960,mexico,fssp,guadalajara,apostolate
 provenance: owner-supplied
 evidence: heading on printed p. 17
 independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; no separate imprint is printed
-source: Heading gives II class on Mar 23. Kalendaria/1960.txt has no 03-23 line. Sancti/04-27.txt is S. Petri Canisii, and on 27 Apr 2026 Rubrics 1960 - 1960 kept that file at rank 3. Sancti/03-23n.txt names Turibius and is not assigned by Kalendaria/1960.txt. This draft does not assert a universal date for Turibius. No text is copied. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.
+source: Heading gives II class on Mar 23. Kalendaria/1960.txt has no 03-23 line. Sancti/04-27.txt is S. Petri Canisii, and on 27 Apr 2026 Rubrics 1960 - 1960 kept that file at rank 3. Sancti/03-23n.txt names Turibius and is not assigned by Kalendaria/1960.txt. This draft does not assert a universal date for Turibius. The Office text, where the heading prints one, is in the overlay file named by the in-use record. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.

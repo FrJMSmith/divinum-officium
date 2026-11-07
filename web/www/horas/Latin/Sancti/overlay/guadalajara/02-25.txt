@@ -1,0 +1,135 @@
+@Commune/C5
+
+[Officium]
+B. Sebastiani ab Apparitio Confessoris
+
+[Rank]
+;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5;
+9 lectiones
+
+[Oratio]
+Deus, qui beátum Sebastiánum Confessórem tuum in simplicitáte cordis ambuláre fecísti, ac cæléstibus donis cumulásti: concéde propítius; ut ejus intercessióne, et puris méntibus tibi servíre, et grátiæ tuæ múnera cónsequi valeámus.
+$Per Dominum
+
+[Lectio1]
+Lectio iij
+Sebastiánus Gudínæ Gallæciæ,
+óppidi diœcésis Auriénsis, ex
+honésta stirpe in Hispánia ortum
+hábuit. Ab infántia pie educátus ac
+puer pascéndis grégibus déditus,
+nihil pueríle gessit in ópere
+statímque appáruit, eum ad
+magnum áliquid portendéndum
+peculiári Dei providéntia fuísse
+præservátum. Nam, ut constánti
+fertur fama, cum duodénnis ex lue
+contagiósa letháliter decúmberet et
+solus in semidíruto tugúrio esset
+derelíctus, morsu lupi e némore
+erumpéntis, qui léniter tumórem
+perrúpit pusque viruléntum plane
+abstérsit, a matre illuc redeúnte
+mirabíliter repértus fuit sanátus.
+Puerítia domi probe transácta,
+adoléscens e patérno solo egréssus,
+Salmánticam secéssit, ibíque aliéno
+servítio mancipátur. Tum rei agráriæ
+álibi adddíctus ut paréntum
+inópiam subleváret, vária hinc inde
+expértus est discrímina, in iísque ter
+mulíeres ejus virginitáti insidiántes
+invícte rejecísse perhibétur. Hisce
+vero perículis valde commótus, in
+novam Hispániam, quo evangélica
+fides nuper fúerat invécta, proficísci
+in ánimum sibi indúxit, navímque
+conscéndens cum áliis sóciis,
+quorum convícia æquanímiter in
+itínere tulit, próspera tandem
+navigatióne confécta, primo
+Angelópolim deinde Méxicum
+áppulit. Egrégiæ caritátis ejus in
+próximum íllico cœpit Méxici
+præbére arguménta. Cum enim ibi
+novo opifício construéndi plaustra,
+arduóque labóri aperiéndi vias
+rectas per impérvias silvas,
+præsértim eam quæ e México ducit
+ad Zacathécam, totum se daret,
+pingues opes, quas inde sibi
+comparábat, in víduis et órphanis
+aléndis, honéstis puéllis dotándis,
+aliísque hujus géneris misericórdiæ
+opéribus impendébat. Quocírca
+hóminem multo ære aliéno
+gravátum atque ádeo a lictóribus
+captum, toto débito generóse solúto,
+e vestígio ab eórum mánibus
+liberávit. Hinc tantam virtútis
+opiniónem adéptus fuit, ut étiam ab
+Indis, ingénita ferocitáte depósita,
+obséquium sibi et famulátum
+præstári mererétur. Núptias, quas
+olim modéste abnúerat, póstmodum
+iníre decrévit. Itaque bis
+matrimónium cum honéstis
+virgínibus contráxit, quas tamen,
+iísdem consentiéntibus, intáctas
+relíquit. Quare dæmon váriis modis
+eum est aggréssus, nunc fœda
+spectra ferócis tauri, trucísque Mauri
+ei objíciens: nunc venústræ mulíeris
+impudíce gestiéntis formam
+índuens. Sed vir Dei signo crucis
+cuncta hostis molímina vicit.
+Postréma cónjuge defúncta órdini
+seráphico ascríbi pétit, ac
+moniálibus sanctæ Claræ cunctis
+ópibus relíctis voti sui compos jam
+septuagenárius in statu láici éffici
+méruit. Solémnibus votis Deo
+nuncupátis in omni virtútum génere
+mirífice enítuit. Summa ei ínerat
+simplícitas, ánimi candor,
+mansuetúdo, obediéntia, paupértas,
+in advérsis item tolerándis exímia
+patiéntia. Témperans ádeo fuit et
+fortis, ut præter prolíxa jejúnia et
+córporis afflictatiónes noctes
+insómnes sæpe tradúxerit; dignus
+proptérea, cui, ut fertur, esuriénti in
+desérto et omni humána ope
+destitúto Angeli cibária ministrárint,
+lassitúdine conféctum recreárint,
+dormiéntem cælésti splendóre
+circumfúlserint, itinerántem a
+plúvia et nívibus defénderint, ex via
+dévium in rectum trámitem
+dedúxerint, deque uno in álium
+locum transtúlerint. Futúros evéntus
+quoque prænóvit; secréta item
+cæléstia et córdium arcána
+penetrávit, et in ferocióres bélluas
+absolútum semper exércuit
+domínium. Eucharístiæ
+sacraméntum, quod in extrémo
+morbo ex vómitu præpedítus
+súmere non póterat, ad se deférri
+popóscit, et humi stratus
+lacrymísque perfúsus inenarrábili
+ánimi sensu cóluit. Sénio tandem
+conféctus prope centenárius
+últimum diem placidíssime
+Angelópoli clausit. Post mortem
+corpus ejus, quod ex pœniténtia
+attrítum squalidúmque erat, statim
+formósam índuit spéciem
+suavémque spirávit odórem.
+Virtútibus dénique et miráculis
+clarus a Pio sexto Pontífice máximo
+in Beatórum cœtum solémniter est
+relátus.

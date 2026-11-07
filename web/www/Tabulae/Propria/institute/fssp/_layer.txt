@@ -1,0 +1,7 @@
+kind: layer
+id: fssp
+scope: institute
+name: Priestly Fraternity of St. Peter
+status: in-use
+selectable: Rubrics 1960 - FSSP
+summary: Fraternity days on top of Rubrics 1960 - USA 1962. Not a copy of the universal calendar.

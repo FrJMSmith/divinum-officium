@@ -1,0 +1,15 @@
+id: stlawrence-08-10
+layer: stlawrence
+scope: apostolate
+date: 08-10
+title: S. Laurentii Martyris
+rank: 6
+rank_name: Duplex I classis
+office: yes
+mass: shared
+kalendar: overlay/stlawrence/08-10
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied rank on an upstream proper
+independent_source: pending
+source: Kalendaria/StLawrence.txt assigns overlay/stlawrence/08-10. The overlays reference @Sancti/08-10 and set Rank Duplex I classis, numeric 6. Upstream Sancti/08-10.txt under rubrica 196 is Duplex II classis, numeric 5, which is what Rubrics 1960 - USA 1962 still uses. The raised rank is the parish overlay.

@@ -1,4 +1,5 @@
 # 1962 days proper to the United States on this particular calendar.
+# Source records: Tabulae/Propria/country/usa/. Directory: docs/proper/START-HERE.md
 # This is not Kalendaria/NC.txt. That file is Rubrics 1960 - 2020 USA
 # and adds later optional feasts (Chanel, Fatima, Goretti, Padre Pio, and others)
 # which this parish list does not keep.

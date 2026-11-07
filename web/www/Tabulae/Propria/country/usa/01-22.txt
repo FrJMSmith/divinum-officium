@@ -1,0 +1,16 @@
+id: usa-01-22
+layer: usa
+scope: country
+date: 01-22
+title: Missa votiva pro pace
+rank: 1.2
+rank_name: IV classis
+office: no
+mass: yes
+file: Sancti/overlay/usa/01-22.txt
+note: Missa votiva pro pace (IV. classis)
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied assignment
+independent_source: pending
+source: Not a kalendar line, so the Office stays the occurring day. ParticularCalendar supplies the Ordo note and, when the occurring rank is below 5, the Mass file web/www/missa/Latin/Sancti/overlay/usa/01-22.txt. The file's own Officium is Missa votiva pro pace. horascommon.pl precedence() swaps that file in only for the Mass. Main.pm colors the phrase pro pace as purple. No external instrument for assigning the Mass to 22 January is cited in this repository.

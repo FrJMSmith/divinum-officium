@@ -1,0 +1,15 @@
+id: stlawrence-10-11
+layer: stlawrence
+scope: apostolate
+date: 10-11
+title: Maternitatis Beatæ Mariæ Virginis
+rank: 6
+rank_name: Duplex I classis
+office: yes
+mass: shared
+kalendar: overlay/stlawrence/10-11
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied rank on an upstream proper
+independent_source: pending
+source: Kalendaria/StLawrence.txt assigns overlay/stlawrence/10-11. The overlays reference @Sancti/10-11 and set Rank Duplex I classis, numeric 6. Upstream Sancti/10-11.txt under rubrica 196 is Duplex 2 classis, numeric 5. The kalendar comment says the parish table keeps the day as I class. The option is owner-supplied.

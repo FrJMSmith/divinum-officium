@@ -1,4 +1,5 @@
 # St. Lawrence Church, Harrisburg, over the diocesan layer.
+# Source records: Tabulae/Propria/apostolate/st-lawrence/. Directory: docs/proper/START-HERE.md
 # 11 October is kept as I class: the parish table exercises the option
 # for the patronal feast of the association Mater Dei.
 04-20=overlay/stlawrence/04-20

@@ -1,0 +1,16 @@
+id: fssp-01-18
+layer: fssp
+scope: institute
+date: 01-18
+title: Missa votiva Cathedræ S. Petri
+rank: 1.2
+rank_name: IV classis
+office: no
+mass: yes
+file: Sancti/overlay/fssp/01-18.txt
+note: Missa votiva Cathedræ S. Petri (IV. classis)
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied assignment
+independent_source: pending
+source: Not a kalendar line. The Office remains the occurring day. The Mass file is web/www/missa/Latin/Sancti/overlay/fssp/01-18.txt, which references @Sancti/01-18 and titles the Mass In Cathedra S. Petri Antiochiæ. It yields when the occurring rank is 5 or higher. docs/st-lawrence-calendar.md records the parish name Chair at Antioch for this votive.

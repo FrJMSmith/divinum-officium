@@ -258,11 +258,10 @@ sub oratio {
   # Missal nn. 449-450: collect pro Episcopo under one conclusion, except
   # Masses of the dead and the days numbered 1, 2, 3 and 8. When impeded,
   # the collect is said on the next day that is not one of those days.
-  if (
-    (my $episcopus = episcopal_collect_file($version, $day, $month, $year))
+  if ( (my $episcopus = episcopal_collect_file($version, $day, $month, $year))
     && $votive !~ /Defunct|C9/i
-    && $winner{Rank} !~ /Defunctorum/i
-  ) {
+    && $winner{Rank} !~ /Defunctorum/i)
+  {
     $retvalue =~ s/\$(Per|Qui) .*\n//gi;
     my %ep = %{setupstring($lang, $episcopus)};
     my $ep_text = $ep{$type};

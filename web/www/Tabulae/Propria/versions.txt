@@ -1,0 +1,47 @@
+# Selectable particular versions. The loader reads this file.
+# Universal Rubrics 1960 - 1960 is the base and is not copied here.
+# A proposal does not belong in this file. See proposals/EXAMPLE-NOT-A-CALENDAR.txt.
+
+id: usa
+version: Rubrics 1960 - USA 1962
+layer: usa
+scope: country
+layers: usa
+kalendar: USA1962
+transfer: USA1962
+stransfer: 1960
+base: Rubrics 1960 - 1960
+status: in-use
+---
+id: fssp
+version: Rubrics 1960 - FSSP
+layer: fssp
+scope: institute
+layers: usa,fssp
+kalendar: FSSP
+transfer: FSSP
+stransfer: 1960
+base: Rubrics 1960 - USA 1962
+status: in-use
+---
+id: harrisburg
+version: Rubrics 1960 - Harrisburg
+layer: harrisburg
+scope: diocese
+layers: usa,fssp,harrisburg
+kalendar: Harrisburg
+transfer: Harrisburg
+stransfer: 1960
+base: Rubrics 1960 - FSSP
+status: in-use
+---
+id: stlawrence
+version: Rubrics 1960 - St. Lawrence
+layer: stlawrence
+scope: apostolate
+layers: usa,fssp,harrisburg,stlawrence
+kalendar: StLawrence
+transfer: StLawrence
+stransfer: 1960
+base: Rubrics 1960 - Harrisburg
+status: in-use

@@ -10,6 +10,7 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 
 package main;
+
 our $Bin;
 our $datafolder = "$Bin/../../www/horas";
 our $version = 'Rubrics 1960 - St. Lawrence';
@@ -50,8 +51,10 @@ sub report_day {
   $note =~ s/\s+/ /g;
   sprintf(
     "%04d-%02d-%02d dow=%d rank=%s winner=%s | %s | %s",
-    $year, $month, $day, $dayofweek, (defined $rank ? $rank : ''),
-    ($winner || ''), $name, $note
+    $year, $month, $day, $dayofweek,
+    (defined $rank ? $rank : ''),
+    ($winner || ''),
+    $name, $note,
   );
 }
 
@@ -86,27 +89,33 @@ if (@ARGV && $ARGV[0] eq '--transfers') {
 
       my ($dm, $dd, $dy) = ($month, $day, $year);
       my $dest;
+
       for (1 .. 50) {
         ($dd, $dm, $dy) = next_civil($dd, $dm, $dy);
         report_day($dy, $dm, $dd);
         my $busy = get_from_directorium('transfer', 'Rubrics 1960 - 1960', sprintf('%02d-%02d', $dm, $dd), $dy);
         my $home = 0;
+
         for my $other (@watch) {
           $home = 1 if $other->[0] == $dm && $other->[1] == $dd && $other->[4] >= 6;
         }
+
         if (($rank // 0) < 4.9 && !$busy && !$home) {
           $dest = sprintf('%02d-%02d', $dm, $dd);
           last;
         }
       }
       next unless $dest;
+
       # Rubric 111a: a I class day keeps only a privileged commemoration.
       # The season supplies those. The displaced III/IV class saint is omitted.
       my $value = $file;
+
       # The loader classifies a line by its destination (the key), and in a
       # leap year reads 1 January-23 February from the next Easter file.
       my ($dcode, $dleap) = easter_code($dy);
       my $early = $dm < 2 || ($dm == 2 && $dd <= 23);
+
       if ($dleap && $early) {
         $dcode++;
         $dcode = 401 if $dcode == 332;
@@ -117,6 +126,7 @@ if (@ARGV && $ARGV[0] eq '--transfers') {
       push @out, [$dcode, $entry, $year];
     }
   }
+
   for my $row (sort { $a->[0] <=> $b->[0] || $a->[1] cmp $b->[1] } @out) {
     print "$row->[0]\t$row->[1]\t# e.g. $row->[2]\n";
   }
@@ -134,12 +144,12 @@ sub next_civil {
 
 if (@ARGV && $ARGV[0] eq '--scan') {
   for my $year (2025, 2026, 2027) {
-    print report_day($year, $_->[0], $_->[1]), "\n" for (
-      [1, 18], [1, 22], [2, 22], [2, 23], [3, 7], [3, 17],
-      [4, 20], [4, 25], [4, 28], [5, 14], [5, 15], [5, 18],
-      [7, 31], [8, 1], [8, 10], [9, 9], [9, 26], [10, 11],
-      [10, 25], [11, 5], [11, 13], [12, 12]
-    );
+    print report_day($year, $_->[0], $_->[1]),
+      "\n"
+      for (
+        [1, 18], [1, 22], [2, 22], [2, 23], [3, 7], [3, 17], [4, 20], [4, 25], [4, 28], [5, 14], [5, 15],
+        [5, 18], [7, 31], [8, 1], [8, 10], [9, 9], [9, 26], [10, 11], [10, 25], [11, 5], [11, 13], [12, 12],
+      );
     print "\n";
   }
   exit;

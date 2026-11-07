@@ -1,0 +1,15 @@
+id: fssp-03-07
+layer: fssp
+scope: institute
+date: 03-07
+title: S. Thomæ de Aquino Confessoris et Ecclesiæ Doctoris
+rank: 5
+rank_name: Duplex II classis
+office: yes
+mass: shared
+kalendar: overlay/fssp/03-07
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied rank on an upstream proper
+independent_source: pending
+source: Kalendaria/FSSP.txt assigns overlay/fssp/03-07. The overlays reference @Sancti/03-07 and set Rank Duplex II classis, numeric 5. Upstream Sancti/03-07.txt ranks the day as Duplex, numeric 3. The raised rank is the overlay.

@@ -11,7 +11,7 @@ Parish calendar of St. Lawrence Church (FSSP, Diocese of Harrisburg), on the 196
 | Rubrics 1960 - Harrisburg | those, plus the diocese |
 | Rubrics 1960 - St. Lawrence | the full stack (this is the one to use) |
 
-Later layers win. Each layer is a kalendar file that records only its own days. `web/www/Tabulae/data.txt` chains them:
+Each layer's kalendar file records only its own days, so a later layer replaces the base line for that date and does not copy the universal calendar. Occurrence with Sunday, Holy Week, and other higher days is computed by `occurrence()` and the tagged transfer tables, not by ignoring the temporal cycle. The source and status of each of these days is in [Start here](proper/START-HERE.md). `web/www/Tabulae/data.txt` chains them:
 
 `1960` → `USA1962` → `FSSP` → `Harrisburg` → `StLawrence`
 

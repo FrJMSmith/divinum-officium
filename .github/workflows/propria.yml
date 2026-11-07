@@ -1,0 +1,37 @@
+name: Particular calendar
+
+# Runs the St. Lawrence propria tests when a pull request touches them.
+# This workflow is not a required status check. The repository ruleset
+# "Protect main branches" does not list one.
+
+on:
+  pull_request:
+    paths:
+      - 'web/www/Tabulae/Propria/**'
+      - 'web/www/Tabulae/Kalendaria/USA1962.txt'
+      - 'web/www/Tabulae/Kalendaria/FSSP.txt'
+      - 'web/www/Tabulae/Kalendaria/Harrisburg.txt'
+      - 'web/www/Tabulae/Kalendaria/StLawrence.txt'
+      - 'web/www/Tabulae/data.txt'
+      - 'web/cgi-bin/DivinumOfficium/ParticularCalendar.pm'
+      - 'web/cgi-bin/horas/horascommon.pl'
+      - 't/DivinumOfficium/ParticularCalendar.t'
+      - 't/DivinumOfficium/Propria.t'
+      - 't/DivinumOfficium/StLawrenceOccurrence.t'
+      - 'docs/proper/**'
+      - '.github/workflows/propria.yml'
+
+jobs:
+  propria-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Perl
+        uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: '5.40'
+
+      - name: Run particular-calendar tests
+        run: prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t

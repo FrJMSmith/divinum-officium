@@ -1,0 +1,15 @@
+id: fssp-02-22
+layer: fssp
+scope: institute
+date: 02-22
+title: In Cathedra S. Petri Apostoli
+rank: 6
+rank_name: Duplex I classis
+office: yes
+mass: shared
+kalendar: overlay/fssp/02-22
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied rank on an upstream proper
+independent_source: pending
+source: Kalendaria/FSSP.txt assigns overlay/fssp/02-22. The Office and Mass overlays reference @Sancti/02-22 and set Rank Duplex I classis, numeric 6. Upstream web/www/horas/Latin/Sancti/02-22.txt gives rubrica 196 the rank Duplex II classis, numeric 5. The raised rank is the overlay. Transfer lines tagged FSSP in Tabulae/Transfer/ move the feast when the day is impeded.

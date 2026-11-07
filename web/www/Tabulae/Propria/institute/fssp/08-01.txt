@@ -1,0 +1,15 @@
+id: fssp-08-01
+layer: fssp
+scope: institute
+date: 08-01
+title: S. Petri ad Vincula
+rank: 4
+rank_name: Duplex majus
+office: yes
+mass: shared
+kalendar: 08-01
+provenance: mixed
+status: in-use
+evidence: owner-supplied choice of an upstream proper
+independent_source: pending
+source: Kalendaria/FSSP.txt assigns 08-01, the upstream file Sancti/08-01.txt (S. Petri ad Vincula, Duplex majus, numeric 4). Kalendaria/1960.txt instead has 08-01=08-01r for the Machabees. The comment in FSSP.txt records that choice. Whether the Office that year is the feast or a Saturday of Our Lady is left to occurrence().

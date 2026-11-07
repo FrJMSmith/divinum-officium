@@ -1,0 +1,16 @@
+id: fssp-11-05
+layer: fssp
+scope: institute
+date: 11-05
+title: Missa cotidiana Defunctorum pro defunctis Sodalitatis
+rank: 1.2
+rank_name: IV classis
+office: no
+mass: yes
+file: Sancti/overlay/fssp/11-05.txt
+note: Missa cotidiana Defunctorum pro defunctis Sodalitatis (IV. classis)
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied assignment
+independent_source: pending
+source: Not a kalendar line. The Office remains the occurring day. The Mass file web/www/missa/Latin/Sancti/overlay/fssp/11-05.txt references @Commune/C9 and uses that common's Oratio2, Secreta2, and Postcommunio2. It yields when the occurring rank is 5 or higher.

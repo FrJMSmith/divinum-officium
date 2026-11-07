@@ -1,0 +1,15 @@
+id: usa-09-09
+layer: usa
+scope: country
+date: 09-09
+title: S. Petri Claver Confessoris
+rank: 2
+rank_name: Duplex optional
+office: yes
+mass: shared
+kalendar: 09-09n~09-09
+provenance: mixed
+status: in-use
+evidence: owner-supplied assignment of an upstream proper
+independent_source: pending
+source: Kalendaria/USA1962.txt assigns 09-09=09-09n~09-09. The proper is the upstream file web/www/horas/Latin/Sancti/09-09n.txt (and the Missal file of the same name). The kalendar comment says these are 1962 days on this particular calendar and not Kalendaria/NC.txt. The tilde keeps the universal 09-09 as a commemoration.

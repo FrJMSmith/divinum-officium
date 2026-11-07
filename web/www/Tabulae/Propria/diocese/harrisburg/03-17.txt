@@ -1,0 +1,15 @@
+id: harrisburg-03-17
+layer: harrisburg
+scope: diocese
+date: 03-17
+title: S. Patricii Episcopi et Confessoris
+rank: 6
+rank_name: Duplex I classis
+office: yes
+mass: shared
+kalendar: overlay/harrisburg/03-17
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied rank on an upstream proper
+independent_source: pending
+source: Kalendaria/Harrisburg.txt assigns overlay/harrisburg/03-17. The overlays reference @Sancti/03-17 and set Rank Duplex I classis, numeric 6. Upstream Sancti/03-17.txt ranks S. Patricii as Duplex, numeric 3. Transfer lines tagged Harrisburg move the feast when the day is impeded. On a day the feast does not win, the universal file remains the commemoration, as on the FSSP version.

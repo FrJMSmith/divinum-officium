@@ -1,0 +1,15 @@
+id: usa-12-12
+layer: usa
+scope: country
+date: 12-12
+title: Beatæ Mariæ Virginis de Guadalupe
+rank: 3
+rank_name: Duplex
+office: yes
+mass: shared
+kalendar: 12-12n
+provenance: mixed
+status: in-use
+evidence: owner-supplied assignment of an upstream proper
+independent_source: pending
+source: Kalendaria/USA1962.txt assigns 12-12=12-12n with no tilde commemoration. The proper is the upstream file web/www/horas/Latin/Sancti/12-12n.txt. The kalendar comment says the Secret and Postcommunion are not in that file and come from the Common of the Blessed Virgin. No introit was added.

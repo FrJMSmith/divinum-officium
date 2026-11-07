@@ -1,0 +1,15 @@
+id: harrisburg-04-25
+layer: harrisburg
+scope: diocese
+date: 04-25
+title: Pro Episcopo
+rank: n/a
+rank_name: collect under one conclusion
+office: no
+mass: collect
+file: Sancti/overlay/harrisburg/pro-episcopo.txt
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied anniversary
+independent_source: pending
+source: Not an Office feast. episcopal_collect_file() adds web/www/missa/Latin/Sancti/overlay/harrisburg/pro-episcopo.txt on the anniversary, or on the next day that impedes_anniversary_collect() does not block. The file names Timotheum Christianum Seniorem and Ecclesiae Harrisburgensis. The same three prayers are used for 31 July. A Sunday that is not Easter does not move the collect. This record does not add a biography.

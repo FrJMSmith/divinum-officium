@@ -47,3 +47,5 @@ Use a pull request to update `st-lawrence` or `master`. Do not force-push those 
 Preserve the notices listed above. Preserve liturgical texts, calendar ranks and dates, and generators. Add a copyright line or a new license file only when it records a decision the maintainer has actually made.
 
 The "Contributing to the project" section of `README.md` is the upstream project's process. It refers to `https://github.com/DivinumOfficium/divinum-officium`.
+
+Particular calendars already selectable in this fork are indexed in [Start here](proper/START-HERE.md). That index does not add a license. New local feasts stay proposed until a pull request marks them in use, as [contributing](proper/contributing.md) describes.

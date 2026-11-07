@@ -1,0 +1,17 @@
+id: EXAMPLE-NOT-A-CALENDAR
+layer: example
+scope: apostolate
+date: 00-00
+title: EXAMPLE ONLY, not a real church, diocese, institute, or seminary
+rank:
+rank_name:
+office: no
+mass: no
+kalendar:
+file:
+note:
+provenance: owner-supplied
+status: proposed
+evidence: pending-evidence
+independent_source: pending
+source: Template only. Delete nothing from the runtime calendar to fill this in. Replace every EXAMPLE field before a maintainer would consider marking a different file in-use.

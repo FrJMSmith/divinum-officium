@@ -13,6 +13,8 @@ of
 Notices already in the tree, and the way to propose a change on the
 `st-lawrence` branch, are described in
 [Fork provenance and contributions](docs/fork-provenance.md).
+The particular calendars that can be selected today are listed in
+[Start here](docs/proper/START-HERE.md).
 
 To generate standalone files (e.g. for electronic eBook readers) see
 [How to generate Divine Office files](standalone/tools/epubgen2/README.md).

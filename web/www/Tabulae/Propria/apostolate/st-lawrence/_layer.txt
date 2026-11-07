@@ -1,0 +1,7 @@
+kind: layer
+id: stlawrence
+scope: apostolate
+name: St. Lawrence Church, Harrisburg
+status: in-use
+selectable: Rubrics 1960 - St. Lawrence
+summary: Parish days on top of Rubrics 1960 - Harrisburg. The menu name keeps the period in St. Lawrence.

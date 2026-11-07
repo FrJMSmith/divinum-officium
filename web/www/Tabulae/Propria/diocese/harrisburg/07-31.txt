@@ -1,0 +1,15 @@
+id: harrisburg-07-31
+layer: harrisburg
+scope: diocese
+date: 07-31
+title: Pro Episcopo
+rank: n/a
+rank_name: collect under one conclusion
+office: no
+mass: collect
+file: Sancti/overlay/harrisburg/pro-episcopo.txt
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied anniversary
+independent_source: pending
+source: Second anniversary using the same Mass file as 25 April. The Office that day is not replaced. impedes_anniversary_collect() can move the collect off a precedence day listed in that function.

@@ -1,0 +1,15 @@
+id: usa-10-25
+layer: usa
+scope: country
+date: 10-25
+title: S. Isidori Agricolæ Confessoris
+rank: 2
+rank_name: Duplex
+office: yes
+mass: shared
+kalendar: 10-25n~10-25
+provenance: mixed
+status: in-use
+evidence: owner-supplied assignment of an upstream proper
+independent_source: pending
+source: Kalendaria/USA1962.txt assigns 10-25=10-25n~10-25. The proper is the upstream file web/www/horas/Latin/Sancti/10-25n.txt. The tilde keeps the universal 10-25 as a commemoration. No external instrument for placing it on this particular list is cited in this repository.

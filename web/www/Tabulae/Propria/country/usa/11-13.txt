@@ -1,0 +1,15 @@
+id: usa-11-13
+layer: usa
+scope: country
+date: 11-13
+title: S. Franciscæ Xaveriæ Cabrini Virginis
+rank: 2.2
+rank_name: Semiduplex
+office: yes
+mass: shared
+kalendar: 11-13n~11-13
+provenance: mixed
+status: in-use
+evidence: owner-supplied assignment of an upstream proper
+independent_source: pending
+source: Kalendaria/USA1962.txt assigns 11-13=11-13n~11-13. The proper is the upstream file web/www/horas/Latin/Sancti/11-13n.txt, whose Rank line is Semiduplex numeric 2.2. docs/st-lawrence-calendar.md already notes that this stored rank prints oddly under 1960. That file was not rewritten. The tilde keeps the universal 11-13 as a commemoration.

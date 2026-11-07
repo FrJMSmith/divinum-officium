@@ -1,0 +1,15 @@
+id: stlawrence-04-20
+layer: stlawrence
+scope: apostolate
+date: 04-20
+title: In Dedicatione Ecclesiæ S. Laurentii
+rank: 6
+rank_name: Duplex I classis
+office: yes
+mass: shared
+kalendar: overlay/stlawrence/04-20
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied title using the common of the Dedication
+independent_source: pending
+source: Kalendaria/StLawrence.txt assigns overlay/stlawrence/04-20. The Office and Mass files set that Officium title and Rank Duplex I classis, numeric 6, and reference @Commune/C8. There is no stock Sancti/04-20. Transfer lines tagged StLawrence move the feast off Easter, Holy Week, and other impeding days. Harrisburg alone does not keep this day.

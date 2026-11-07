@@ -1,0 +1,7 @@
+kind: layer
+id: usa
+scope: country
+name: United States
+status: in-use
+selectable: Rubrics 1960 - USA 1962
+summary: Five sanctoral days and one votive Mass, on universal Rubrics 1960. Not Rubrics 1960 - 2020 USA.

@@ -1,0 +1,7 @@
+kind: layer
+id: harrisburg
+scope: diocese
+name: Diocese of Harrisburg
+status: in-use
+selectable: Rubrics 1960 - Harrisburg
+summary: Diocesan days and the collects pro Episcopo, on top of Rubrics 1960 - FSSP.

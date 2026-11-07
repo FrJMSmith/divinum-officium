@@ -1,0 +1,15 @@
+id: harrisburg-05-14
+layer: harrisburg
+scope: diocese
+date: 05-14
+title: In Dedicatione Ecclesiæ Cathedralis Harrisburgensis
+rank: 6
+rank_name: Duplex I classis
+office: yes
+mass: shared
+kalendar: overlay/harrisburg/05-14
+provenance: owner-supplied
+status: in-use
+evidence: owner-supplied title using the common of the Dedication
+independent_source: pending
+source: Kalendaria/Harrisburg.txt assigns overlay/harrisburg/05-14. The Office and Mass files set that Officium title and Rank Duplex I classis, numeric 6, and reference @Commune/C8. They do not add a new proper. Transfer lines tagged Harrisburg move the feast when the day is impeded.

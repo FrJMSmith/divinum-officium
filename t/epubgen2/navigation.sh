@@ -1,7 +1,7 @@
 #!/bin/bash
 # Builds placeholder EPUBs (no office text) and checks the generated contents.
-# Monthly, yearly, and a two-year run are separate books with nested
-# month/day/hour navigation and stable identifiers.
+# Monthly, yearly, and a two-year run are separate books. The native menu is
+# month then date. Hour names stay as links in the contents page.
 set -euo pipefail
 
 ROOT=$(CDPATH= cd -- "$(dirname "$0")/../.." && pwd)
@@ -73,7 +73,7 @@ def uid_of(zf):
     assert ncx_uid != OLD_UUID
     assert re.fullmatch(r"[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}", ncx_uid), ncx_uid
     depth = root.find("n:head/n:meta[@name='dtb:depth']", NS).get("content")
-    assert depth == "3", depth
+    assert depth == "2", depth
     return ncx_uid
 
 def tops(zf):
@@ -84,20 +84,11 @@ def month_node(zf, label):
     assert len(found) == 1, (label, [text_of(p) for p in tops(zf)])
     return found[0]
 
-def assert_day(day, year, month, hours):
-    label = text_of(day)
-    assert label.endswith(str(year)), label
-    kids = children(day)
-    assert [text_of(k) for k in kids] == hours, (label, [text_of(k) for k in kids])
-    assert src_of(day) == src_of(kids[0])
-    assert day.get("playOrder") == kids[0].get("playOrder")
-    srcs = [src_of(k) for k in kids]
-    assert len(set(srcs)) == len(srcs)
-    orders = [k.get("playOrder") for k in kids]
-    assert len(set(orders)) == len(orders)
-    for src in srcs:
-        path = src.split("#", 1)[0]
-        assert path.startswith(f"{month:02d}-") and f"-{year}-" in path, path
+def assert_day(day, year, month):
+    assert text_of(day).endswith(str(year)), text_of(day)
+    assert children(day) == []
+    src = src_of(day)
+    assert src.startswith(f"{month:02d}-") and f"-{year}-" in src and src.endswith("-1-Matutinum.html"), src
 
 def assert_month_book(directory, year, month, days, hours, toc_name):
     name = f"breviarium{year}-{month:02d}.epub"
@@ -110,12 +101,13 @@ def assert_month_book(directory, year, month, days, hours, toc_name):
         assert src_of(month_point) == f"{toc_name}#m{month:02d}"
         day_points = children(month_point)
         assert len(day_points) == days, (name, len(day_points))
-        assert_day(day_points[0], year, month, hours)
-        assert_day(day_points[-1], year, month, hours)
+        assert_day(day_points[0], year, month)
+        assert_day(day_points[-1], year, month)
         points = list(ncx_tree(zf).iter(f"{{{NS['n']}}}navPoint"))
+        labels = {text_of(p) for p in points}
+        assert labels.isdisjoint(hours)
         counts = Counter(p.get("playOrder") for p in points)
-        assert all(n in (1, 2) for n in counts.values())
-        assert sum(1 for n in counts.values() if n == 2) == days
+        assert set(counts.values()) == {1}
         ids = [p.get("id") for p in points]
         assert len(ids) == len(set(ids))
         toc = zf.read(toc_name).decode("utf-8")
@@ -148,7 +140,9 @@ def assert_year_book(directory, year, feb_days):
         assert labels[2:-1] == [f"{month_name(m)} {year}" for m in range(1, 13)], labels
         feb = month_node(zf, f"Februarius {year}")
         assert len(children(feb)) == feb_days
-        assert_day(children(feb)[0], year, 2, HOURS)
+        assert_day(children(feb)[0], year, 2)
+        texts = [text_of(p) for p in ncx_tree(zf).iter(f"{{{NS['n']}}}navPoint")]
+        assert not any(t in HOURS for t in texts)
         blob = zf.read("toc.ncx").decode("utf-8")
         other = "2024" if year == 2023 else "2023"
         assert f"-{other}-" not in blob

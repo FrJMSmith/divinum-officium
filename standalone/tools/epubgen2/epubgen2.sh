@@ -596,7 +596,7 @@ CONTAINER
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="la">
   <head>
     <meta content="$BOOK_UUID" name="dtb:uid"/>
-    <meta content="3" name="dtb:depth"/>
+    <meta content="2" name="dtb:depth"/>
     <meta content="0" name="dtb:totalPageCount"/>
     <meta content="0" name="dtb:maxPageNumber"/>
   </head>
@@ -662,21 +662,12 @@ appendNCXPointClose() {
 	echo '</navPoint>' >>"$WDIR/toc.ncx"
 }
 
-# One day: the day opens Matins, and the Matutinum entry opens that same file,
-# so those two entries share a playOrder. Each later hour has its own file.
+# One date in the native menu. It opens Matins. The other hours stay as
+# full-name links in the contents page, not as further menu entries.
 appendDayNCX() {
-	local matins
 	H=0
 	formatFilename
-	matins=$FILENAME
-	appendNCXPointOpen next "$DAY ${MONTHNAMES[$MONTH_NUM_INDEX]} $YEAR" "$matins"
-	appendNCXPointOpen same "Matutinum" "$matins"
-	appendNCXPointClose
-	for H in $(seq 1 "$HORA_INDEX_LAST"); do
-		formatFilename
-		appendNCXPointOpen next "${HORAS_NAMES[$H]}" "$FILENAME"
-		appendNCXPointClose
-	done
+	appendNCXPointOpen next "$DAY ${MONTHNAMES[$MONTH_NUM_INDEX]} $YEAR" "$FILENAME"
 	appendNCXPointClose
 }
 

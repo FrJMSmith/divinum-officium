@@ -79,6 +79,16 @@ def uid_of(zf):
 def tops(zf):
     return ncx_tree(zf).find("n:navMap", NS).findall("n:navPoint", NS)
 
+def assert_spine_order(zf):
+    opf = ET.fromstring(zf.read("content.opf"))
+    href = {item.get("id"): item.get("href") for item in opf.findall(".//o:item", OPF)}
+    spine = [item.get("idref") for item in opf.findall(".//o:itemref", OPF)]
+    position = {href[item_id]: index for index, item_id in enumerate(spine)}
+    files = [src_of(point).split("#", 1)[0] for point in ncx_tree(zf).iter(f"{{{NS['n']}}}navPoint")]
+    order = [position[name] for name in files]
+    assert order == sorted(order), order[:8]
+    assert len(set(files)) > 1
+
 def month_node(zf, label):
     found = [p for p in tops(zf) if text_of(p) == label]
     assert len(found) == 1, (label, [text_of(p) for p in tops(zf)])
@@ -98,18 +108,23 @@ def assert_month_book(directory, year, month, days, hours, toc_name):
         top = tops(zf)
         assert [text_of(p) for p in top] == ["Title", "TOC", f"{month_name(month)} {year}", "About"], [text_of(p) for p in top]
         month_point = top[2]
-        assert src_of(month_point) == f"{toc_name}#m{month:02d}"
         day_points = children(month_point)
         assert len(day_points) == days, (name, len(day_points))
+        first = f"{month:02d}-01-{year}-1-Matutinum.html"
+        assert src_of(month_point) == first
+        assert src_of(day_points[0]) == first
+        assert month_point.get("playOrder") == day_points[0].get("playOrder")
         assert_day(day_points[0], year, month)
         assert_day(day_points[-1], year, month)
         points = list(ncx_tree(zf).iter(f"{{{NS['n']}}}navPoint"))
         labels = {text_of(p) for p in points}
         assert labels.isdisjoint(hours)
         counts = Counter(p.get("playOrder") for p in points)
-        assert set(counts.values()) == {1}
+        assert sum(1 for n in counts.values() if n == 2) == 1
+        assert all(n in (1, 2) for n in counts.values())
         ids = [p.get("id") for p in points]
         assert len(ids) == len(set(ids))
+        assert_spine_order(zf)
         toc = zf.read(toc_name).decode("utf-8")
         assert f'id="m{month:02d}"' in toc
         assert "<a name=" not in toc
@@ -143,6 +158,9 @@ def assert_year_book(directory, year, feb_days):
         assert_day(children(feb)[0], year, 2)
         texts = [text_of(p) for p in ncx_tree(zf).iter(f"{{{NS['n']}}}navPoint")]
         assert not any(t in HOURS for t in texts)
+        counts = Counter(p.get("playOrder") for p in ncx_tree(zf).iter(f"{{{NS['n']}}}navPoint"))
+        assert sum(1 for n in counts.values() if n == 2) == 12
+        assert_spine_order(zf)
         blob = zf.read("toc.ncx").decode("utf-8")
         other = "2024" if year == 2023 else "2023"
         assert f"-{other}-" not in blob

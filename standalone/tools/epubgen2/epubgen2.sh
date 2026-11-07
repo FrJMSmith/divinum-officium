@@ -662,18 +662,29 @@ appendNCXPointClose() {
 	echo '</navPoint>' >>"$WDIR/toc.ncx"
 }
 
-# One date in the native menu. It opens Matins. The other hours stay as
-# full-name links in the contents page, not as further menu entries.
+# One date in the native menu. It opens that day's Matins file. The other
+# hours stay as full-name links in the contents page.
 appendDayNCX() {
 	H=0
 	formatFilename
-	appendNCXPointOpen next "$DAY ${MONTHNAMES[$MONTH_NUM_INDEX]} $YEAR" "$FILENAME"
+	if [[ "$FILENAME" == "$MONTH_FIRST" ]]; then
+		appendNCXPointOpen same "$DAY ${MONTHNAMES[$MONTH_NUM_INDEX]} $YEAR" "$FILENAME"
+	else
+		appendNCXPointOpen next "$DAY ${MONTHNAMES[$MONTH_NUM_INDEX]} $YEAR" "$FILENAME"
+	fi
 	appendNCXPointClose
 }
 
-# One month, nested under the contents heading for that month.
+# The month opens the same Matins file as its first date, so those two
+# entries share a playOrder. Later dates open later files, in spine order.
 appendMonthNCX() {
-	appendNCXPointOpen next "${MONTHNAMES[$MONTH_NUM_INDEX]} $YEAR" "${TOC_FILENAME}#m${MONTH}"
+	local saved_day=$DAY
+	DAY=01
+	H=0
+	formatFilename
+	MONTH_FIRST=$FILENAME
+	DAY=$saved_day
+	appendNCXPointOpen next "${MONTHNAMES[$MONTH_NUM_INDEX]} $YEAR" "$MONTH_FIRST"
 	foreachDayInMonth appendDayNCX
 	appendNCXPointClose
 }

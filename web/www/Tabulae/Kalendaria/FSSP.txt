@@ -1,4 +1,6 @@
-# Priestly Fraternity of St. Peter, over the 1962 USA layer.
+# Priestly Fraternity of St. Peter. These lines are only the Fraternity's own days.
+# Rubrics 1960 - FSSP reaches the United States days through its base.
+# Rubrics 1960 - Mexico FSSP uses this same file and does not.
 # Source records: Tabulae/Propria/institute/fssp/. Directory: docs/proper/START-HERE.md
 # 18 January and 5 November are IV class Masses only; see ParticularCalendar.pm.
 # 1 August keeps St. Peter in Chains (08-01) in place of the 1962 Machabees (08-01r).

@@ -1,0 +1,15 @@
+id: sanpedro-08-01
+layer: sanpedro
+scope: apostolate
+date: 08-01
+title: S. Petri ad Vincula
+rank: 6
+rank_name: Duplex I classis
+office: yes
+mass: no
+kalendar: overlay/sanpedro/08-01
+provenance: owner-supplied
+status: in-use
+evidence: titular of the quasi-parish, raised to I class
+independent_source: pending
+source: The Office is the existing Sancti/08-01.txt, S. Petri ad Vincula. Kalendaria/FSSP.txt points at that same file, whose rank line is Duplex majus, numeric 4. The apostolate keeps the text and sets I class, numeric 6. No new prayer is written. 12 October is not in this file.

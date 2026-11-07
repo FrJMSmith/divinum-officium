@@ -66,7 +66,7 @@ for a day whose record is no longer the example template.
 From the repository root:
 
 ```
-prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t t/DivinumOfficium/GuadalajaraOffice.t
+prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t t/DivinumOfficium/GuadalajaraOffice.t t/DivinumOfficium/FSSPGuadalajara.t
 ```
 
 `GuadalajaraOffice.t` checks the selectable Office, the printed antiphons, and the collisions named in [Guadalajara](guadalajara.md). Canada is not part of this branch. None of this scans every Easter date.

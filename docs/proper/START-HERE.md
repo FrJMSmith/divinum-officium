@@ -18,8 +18,11 @@ upstream calendar and is not this stack.
 | Rubrics 1960 - St. Lawrence | Church / apostolate | usa, fssp, harrisburg, stlawrence | In use. Worked example below. |
 | Rubrics 1960 - Mexico | Country | mexico | Office only. Dec 12. Not in the Mass menu. |
 | Rubrics 1960 - Guadalajara | Diocese | mexico, guadalajara | Office only. Not in the Mass menu. |
+| Rubrics 1960 - Mexico FSSP | Institute on Mexico | mexico, mexico-fssp | Office only. FSSP's own days. No USA layer. |
+| Rubrics 1960 - FSSP Guadalajara | Diocese on that FSSP | mexico, mexico-fssp, fssp-guadalajara | Office only. Diocese, not the quasi-parish. |
+| Rubrics 1960 - San Pedro en Cadenas | Quasi-parish | mexico, mexico-fssp, fssp-guadalajara, sanpedro | Office only. Adds the titular on 1 August. |
 
-No seminary layer is in use. Canada is not in this branch. The Guadalajara stack does not include `usa` or `fssp`. The running FSSP version still inherits the United States layer, and it was not recomposed here.
+No seminary layer is in use. Canada is not in this branch. `Rubrics 1960 - FSSP` still inherits the United States layer. `Rubrics 1960 - FSSP Guadalajara` does not. Its order, bottom to top, is universal 1960, Mexico, the Fraternity's own days, then Guadalajara. The bare Guadalajara menu remains.
 
 The Office label to select is **Rubrics 1960 - Guadalajara**. Mexico is selectable on its own for the national Guadalupe Office. Neither name is in `missa.dialog`. No Mass proper was in the source, and none was added. This repository is the generator. It is not a deployed public site.
 
@@ -113,7 +116,7 @@ precedence days that function lists. It does not replace the Office.
 From the repository root:
 
 ```
-prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t t/DivinumOfficium/GuadalajaraOffice.t
+prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t t/DivinumOfficium/GuadalajaraOffice.t t/DivinumOfficium/FSSPGuadalajara.t
 ```
 
 `perl web/cgi-bin/horas/stlawrence-check.pl --scan` prints 2025–2027.

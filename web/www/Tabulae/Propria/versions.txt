@@ -69,3 +69,39 @@ stransfer: 1960
 base: Rubrics 1960 - Mexico
 office_only: yes
 status: in-use
+---
+id: mexico-fssp
+version: Rubrics 1960 - Mexico FSSP
+layer: mexico-fssp
+scope: institute
+layers: mexico,mexico-fssp
+kalendar: FSSP
+transfer: FSSP
+stransfer: 1960
+base: Rubrics 1960 - Mexico
+office_only: yes
+status: in-use
+---
+id: fssp-guadalajara
+version: Rubrics 1960 - FSSP Guadalajara
+layer: fssp-guadalajara
+scope: diocese
+layers: mexico,mexico-fssp,fssp-guadalajara
+kalendar: Guadalajara
+transfer: Guadalajara
+stransfer: 1960
+base: Rubrics 1960 - Mexico FSSP
+office_only: yes
+status: in-use
+---
+id: sanpedro
+version: Rubrics 1960 - San Pedro en Cadenas
+layer: sanpedro
+scope: apostolate
+layers: mexico,mexico-fssp,fssp-guadalajara,sanpedro
+kalendar: SanPedro
+transfer: SanPedro
+stransfer: 1960
+base: Rubrics 1960 - FSSP Guadalajara
+office_only: yes
+status: in-use

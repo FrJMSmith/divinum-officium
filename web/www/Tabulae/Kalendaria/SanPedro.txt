@@ -1,0 +1,6 @@
+# Quasi-parish of San Pedro en Cadenas, on Rubrics 1960 - FSSP Guadalajara.
+# 1 August is the titular of the quasi-parish, I class, using the existing
+# St. Peter in Chains office. No dedication day is inscribed: none was supplied.
+# 12 October remains the diocesan Zapopan office. Our Lady of the Pillar is not
+# substituted for it.
+08-01=overlay/sanpedro/08-01

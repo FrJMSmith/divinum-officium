@@ -24,6 +24,9 @@ on:
       - 't/DivinumOfficium/StLawrenceOccurrence.t'
       - 't/DivinumOfficium/CountryDrafts.t'
       - 't/DivinumOfficium/GuadalajaraOffice.t'
+      - 't/DivinumOfficium/FSSPGuadalajara.t'
+      - 'web/www/Tabulae/Kalendaria/FSSP.txt'
+      - 'web/www/Tabulae/Kalendaria/SanPedro.txt'
       - 'docs/proper/**'
       - '.github/workflows/propria.yml'
 
@@ -40,4 +43,4 @@ jobs:
           perl-version: '5.40'
 
       - name: Run particular-calendar tests
-        run: prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t t/DivinumOfficium/GuadalajaraOffice.t
+        run: prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t t/DivinumOfficium/GuadalajaraOffice.t t/DivinumOfficium/FSSPGuadalajara.t

@@ -1,0 +1,24 @@
+id: draft-gdl-11-23
+layer: guadalajara
+scope: diocese
+date: 11-23
+title: S. Clementis I, Papæ et Mart.
+rank: n/a
+rank_name: no class printed
+printed_class: unknown
+source_class: unknown
+office: no
+mass: no
+office_text: pending
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+confirmation: unconfirmed
+edition: unknown
+wider_scope: pending
+stack: 1960,mexico,fssp,guadalajara,apostolate
+provenance: owner-supplied
+evidence: heading on printed p. 53 with no class
+independent_source: pending
+source: Printed p. 53 names the saint and does not print a class. source_class is unknown. No rank is inferred. On 23 Nov 2026, Rubrics 1960 - 1960 kept Sancti/11-23.txt at rank 3, with S. Felicitas commemorated. This draft does not change that. No text is copied. The original edition and any approval are not identified.

@@ -1,0 +1,24 @@
+id: draft-gdl-07-04
+layer: guadalajara
+scope: diocese
+date: 07-04
+title: B.M.V. titulo Refugium Peccatorum
+rank: n/a
+rank_name: II class as printed, not an engine numeric rank
+printed_class: 2
+source_class: II
+office: no
+mass: no
+office_text: pending
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+confirmation: unconfirmed
+edition: unknown
+wider_scope: pending
+stack: 1960,mexico,fssp,guadalajara,apostolate
+provenance: owner-supplied
+evidence: heading on printed p. 34
+independent_source: pending
+source: Heading gives II class. The note that the Office is taken from the common is not a copied text. Wider scope is pending. No prayer is copied. The original edition and any approval are not identified.

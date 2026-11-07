@@ -1,0 +1,25 @@
+id: draft-ca-10-16
+layer: canada
+scope: country
+date: 10-16
+title: St. Marguerite d'Youville, Widow
+rank: n/a
+rank_name: 3rd class as printed in the ordo, not an engine numeric rank
+printed_class: 3
+color_in_source: white
+gloria_in_source: yes
+preface_in_source: common
+office: no
+mass: no
+office_text: pending
+kalendar:
+file:
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+stack: 1960,canada,fssp,diocese,apostolate
+provenance: owner-supplied
+evidence: owner-approved FSSP North American Ordo 2026, printed p. 37
+independent_source: pending
+source: National CAN line, not a diocesan patron. The ordo prints class 3, white, Gloria, and the common preface. For Friday in 2026 it shows this line with St. Hedwig commemorated. That is an observation of that page, not a rule adopted here. A diocesan note for another saint on the same date is not this record and is not loaded. No Office text is generated. OPC-1962 is pending.

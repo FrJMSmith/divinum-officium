@@ -1,0 +1,24 @@
+id: draft-gdl-12-18
+layer: guadalajara
+scope: diocese
+date: 12-18
+title: In Expectatione Partus B.M.V.
+rank: n/a
+rank_name: not a feast
+printed_class: none
+source_class: commemoration at Lauds only
+office: no
+mass: no
+office_text: pending
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+confirmation: unconfirmed
+edition: unknown
+wider_scope: pending
+stack: 1960,mexico,fssp,guadalajara,apostolate
+provenance: owner-supplied
+evidence: heading on printed p. 10; class is not a feast class
+independent_source: pending
+source: The heading calls this a commemoration at Lauds only, not a feast. No text is copied. The original edition and any approval are not identified. This does not change the running calendar.

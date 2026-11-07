@@ -1,0 +1,23 @@
+id: draft-ca-09-26
+layer: canada
+scope: country
+date: 09-26
+title: Ss. Jean de Brébeuf, Isaac Jogues and Companions (Canadian Martyrs)
+rank: n/a
+rank_name: 2nd class as printed via the ordo note, not an engine numeric rank
+printed_class: 2
+color_in_source: not printed for the feast on the 2026 page
+office: no
+mass: no
+office_text: pending
+kalendar:
+file:
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+stack: 1960,canada,fssp,diocese,apostolate
+provenance: owner-supplied
+evidence: owner-approved FSSP North American Ordo 2026, p. 34 note 2 and p. 35
+independent_source: pending
+source: National CAN line. Not the USA layer's 3rd-class North American Martyrs, and not inherited from Kalendaria/USA1962.txt. The ordo's note 2 on p. 34 attributes 2nd class to the Canadian proper supplement of the 1962 Missal. That supplement is not in this repository. p. 35 does not print a vestment color for the feast in 2026. Martyrs are ordinarily red in the 1960 rubrics; that general rule is not a color printed on this page, and this draft stores no color. The 2026 page shows Ember Saturday with the martyrs commemorated. That is an observation of that printed year, not a rubric adopted here. Name order is Brébeuf first, as printed. No Office text is generated. OPC-1962 is pending.

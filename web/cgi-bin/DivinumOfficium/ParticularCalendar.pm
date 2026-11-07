@@ -284,6 +284,28 @@ sub _data_row {
   return;
 }
 
+sub _proposal_records {
+  my ($dir) = @_;
+  my @found;
+  opendir my $dh, $dir or die "Can't open $dir: $!";
+  my @names = sort readdir $dh;
+  closedir $dh;
+
+  for my $name (@names) {
+    next if $name =~ /^\./;
+    my $path = "$dir/$name";
+
+    if (-d $path) {
+      push @found, _proposal_records($path);
+    } elsif ($name =~ /\.txt\z/ && $name !~ /^README/i) {
+      my ($rec) = _read_records($path);
+      next unless $rec && exists $rec->{status};
+      push @found, $rec;
+    }
+  }
+  return @found;
+}
+
 sub _kalendar_lines {
   my ($path) = @_;
   open my $fh, '<:encoding(UTF-8)', $path or die "Can't open $path: $!";
@@ -470,16 +492,22 @@ sub validate_propria {
   if (!-d $proposal_dir) {
     _push_err(\@errors, 'proposals directory is missing');
   } else {
-    opendir my $dh, $proposal_dir or die "Can't open $proposal_dir: $!";
-    my @files = sort grep { /\.txt\z/ && !/^README/i } readdir $dh;
-    closedir $dh;
+    for my $rec (_proposal_records($proposal_dir)) {
+      my $label = $rec->{_path} || $rec->{id} || 'proposal';
+      push @proposal_ids, $rec->{id} || $label;
+      _push_err(\@errors, "$label is not status proposed") if ($rec->{status} || '') ne 'proposed';
+      _push_err(\@errors, "$label uses an in-use layer") if $layer_of{$rec->{layer} || ''};
+      _push_err(\@errors, "$label stack must not include the usa layer")
+        if defined $rec->{stack} && $rec->{stack} =~ /(?:^|,)\s*usa\s*(?:,|\z)/;
 
-    for my $file (@files) {
-      my ($rec) = _read_records("$proposal_dir/$file");
-      next unless $rec && exists $rec->{status};
-      push @proposal_ids, $rec->{id} || $file;
-      _push_err(\@errors, "$file is not status proposed") if ($rec->{status} || '') ne 'proposed';
-      _push_err(\@errors, "$file uses an in-use layer") if $layer_of{$rec->{layer} || ''};
+      if (($rec->{scope} || '') eq 'country' || ($rec->{scope} || '') eq 'diocese') {
+        _push_err(\@errors, "$label draft is missing completeness")
+          if ($rec->{completeness} || '') ne 'incomplete';
+        _push_err(\@errors, "$label draft must set activates to no")
+          if ($rec->{activates} || '') ne 'no';
+        _push_err(\@errors, "$label draft must set inherits_usa to no")
+          if ($rec->{inherits_usa} || '') ne 'no';
+      }
 
       if (($rec->{id} || '') eq 'EXAMPLE-NOT-A-CALENDAR') {
         $saw_example = 1;

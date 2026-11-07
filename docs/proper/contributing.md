@@ -53,20 +53,23 @@ for a day whose record is no longer the example template.
 | status | `proposed` or `in-use`. |
 | evidence | Who supplied the assignment, in a few words. |
 | independent_source | `pending`, or `pending` plus the upstream path, until an external source is actually cited. |
-| source | Repository paths and what those files say. |
+| source | Repository paths and what those files say. For a draft, the printed heading and page, not a copied prayer. |
+| completeness | `incomplete` on a country or diocese draft. |
+| activates | `no` until a later pull request adds a menu. |
+| inherits_usa | `no` for Canada, Mexico, and Guadalajara. The running FSSP stack may still include `usa`. |
+| stack | Desired layers, such as `1960,canada,fssp,diocese,apostolate`. The token `usa` is rejected. |
+| office_text | `pending` when no proper Office is in the repository. Do not invent one. |
+| printed_class | Class as printed in a cited ordo. Not an engine rank. |
 
 ## Command
 
 From the repository root:
 
 ```
-prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t
+prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t
 ```
 
-That is 137 tests on this tree: the older particular-calendar checks, the
-registry check, and the Office/Mass days in ordinary and collision years
-(2025–2027 and Holy Saturday 2030). It does not scan every Easter date.
-`stlawrence-check.pl --transfers` still only prints.
+The first three files are the 137 tests for the calendars that already run. `CountryDrafts.t` checks that the Canada, Mexico, and Guadalajara drafts stay proposed. None of this scans every Easter date.
 
 The GitHub workflow file `.github/workflows/propria.yml` runs the same
 command. Its name is `Particular calendar` and its job is `propria-tests`.

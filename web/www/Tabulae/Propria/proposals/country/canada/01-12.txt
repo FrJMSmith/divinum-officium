@@ -1,0 +1,25 @@
+id: draft-ca-01-12
+layer: canada
+scope: country
+date: 01-12
+title: St. Marguerite Bourgeoys
+rank: n/a
+rank_name: 3rd class as printed in the ordo, not an engine numeric rank
+printed_class: 3
+color_in_source: white
+gloria_in_source: yes
+preface_in_source: Epiphany
+office: no
+mass: no
+office_text: pending
+kalendar:
+file:
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+stack: 1960,canada,fssp,diocese,apostolate
+provenance: owner-supplied
+evidence: owner-approved FSSP North American Ordo 2026, printed pp. 15 and 43
+independent_source: pending
+source: National CAN line, not a diocesan one. The ordo prints class 3, white, Gloria, and a preface of the Epiphany at p. 15 for 2026 and p. 43 for 2027. Those pages also print the line beside the feria of Epiphany. That layout is an observation of those two years. It is not adopted here as a rule that the day is optional or that it replaces the feria. Precedence in Officia Propria Canadensis (1962) is pending; that book is not in this repository. The ordo gives no separate Office lessons or hymns. No Office text is generated.

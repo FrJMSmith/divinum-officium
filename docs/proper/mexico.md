@@ -16,6 +16,6 @@ One national candidate is entered, because its heading names the principal patro
 |---|---|---|---|
 | 12-12 | B. Mariæ Virginis de Guadalupe, Patronæ primariæ Nationis Mexicanæ et Americæ Latinæ | I | [12-12](../../web/www/Tabulae/Propria/proposals/country/mexico/12-12.txt) |
 
-An octave is not in the heading and is not added. The USA layer is not the parent of this record. Spellings follow the PDF text layer, including `suplícibus`, `Praclara`, `formosíssma`, and `rubéta`. Those were not normalized. When 12 December is the Sunday of Advent, as in 2027, the Sunday is kept and Guadalupe is commemorated. No transfer line was added.
+An octave is not in the heading and is not added. The USA layer is not the parent of this record. Spellings follow the PDF text layer, including `suplícibus`, `Praclara`, `formosíssma`, and `rubéta`. Those were not normalized. When 12 December is the Sunday of Advent, as in 2027, General Rubrics nn. 95-96 transfer this 1st class feast to the next day that is not 1st or 2nd class. In 2027 that day is 13 December. The Sunday is kept on the 12th. The Advent feria is commemorated on the 13th. Lucy is not.
 
 Other headings from that transcription do not carry this national title. They stay under [Guadalajara](guadalajara.md), with wider scope still pending. No further national feast is entered.

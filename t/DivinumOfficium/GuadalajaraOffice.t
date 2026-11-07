@@ -131,6 +131,10 @@ like($guadalupe->{Oratio}, qr/in terris, ejus conspéctu/, 'Guadalupe oration is
 like($guadalupe->{'Hymnus Matutinum'}, qr/Praclara custos/, 'the hymn spelling is not normalized');
 like($guadalupe->{'Hymnus Matutinum'}, qr/formosíssma/, 'formosíssma is kept');
 like($guadalupe->{'Hymnus Matutinum'}, qr/rubéta/, 'rubéta is kept');
+like($guadalupe->{Lectio1}, qr/meis mitte radíces/, 'the tt ligature in mitte is restored');
+unlike($guadalupe->{Lectio1}, qr/mi e rad/, 'the dropped ligature is not left as two words');
+like($guadalupe->{Lectio1}, qr/Lectio j/, 'the printed lesson mark is kept');
+ok($guadalupe->{Lectio1} && $guadalupe->{Lectio9}, 'nine lessons are present');
 unlike($guadalupe->{Oratio}, qr/Et fit|PROPRIA/, 'the collect is not the following rubric');
 
 my $rose = officestring('Latin', 'Sancti/overlay/guadalajara/08-30.txt');
@@ -209,9 +213,28 @@ $got = office_day(version => $gdl, y => 2027, m => 5, d => 16);
 like($got->{winner}, qr{Tempora/Pasc7-0\.txt\z}, '2027-05-16 Pentecost outranks Nepomucene');
 is($got->{comm}, '', 'Pentecost does not commemorate the II class feast');
 
+# Rubrics 1960 nn. 95-96: only a 1st class feast transfers, and it moves to the
+# next day that is not 1st or 2nd class. Advent Sunday is item 6; a national
+# patron is item 12, so the Sunday wins and Guadalupe moves to 13 December.
+# 13 December 2027 is St Lucy, 3rd class, and the Advent feria is also 3rd class.
 $got = office_day(version => $gdl, y => 2027, m => 12, d => 12);
 like($got->{winner}, qr{Tempora/Adv3-0\.txt\z}, '2027-12-12 Advent Sunday is kept');
-like($got->{comm}, qr{overlay/mexico/12-12\.txt\z}, 'Guadalupe is commemorated, not transferred');
+is($got->{comm}, '', 'the impeded I class feast is not reduced to a commemoration');
+like($got->{note}, qr/Transfer/, '2027-12-12 records the transfer');
+
+$got = office_day(version => $gdl, y => 2027, m => 12, d => 13);
+like($got->{winner}, qr{overlay/mexico/12-12\.txt\z}, '2027-12-13 keeps the transferred Guadalupe');
+is($got->{rank}, '6', 'the transferred feast stays I class');
+like($got->{comm}, qr{Tempora/Adv3-1\.txt\z}, 'the Advent feria is the privileged commemoration');
+unlike($got->{winner}, qr{12-13}, 'Lucy does not take the transferred day');
+
+$got = office_day(version => $mx, y => 2027, m => 12, d => 13);
+like($got->{winner}, qr{overlay/mexico/12-12\.txt\z}, 'Mexico transfers Guadalupe on the same day');
+
+foreach my $year (2021, 2038) {
+  $got = office_day(version => $gdl, y => $year, m => 12, d => 13);
+  like($got->{winner}, qr{overlay/mexico/12-12\.txt\z}, "$year-12-13 also receives the transferred feast");
+}
 
 $got = office_day(version => $gdl, y => 2016, m => 3, d => 23);
 like($got->{winner}, qr{Tempora/Quad6-3\.txt\z}, '2016-03-23 Holy Wednesday outranks Turibius');

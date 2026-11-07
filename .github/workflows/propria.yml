@@ -14,6 +14,8 @@ on:
       - 'web/www/Tabulae/Kalendaria/StLawrence.txt'
       - 'web/www/Tabulae/Kalendaria/Mexico.txt'
       - 'web/www/Tabulae/Kalendaria/Guadalajara.txt'
+      - 'web/www/Tabulae/Transfer/*.txt'
+      - 'web/www/horas/Latin/Sancti/overlay/**'
       - 'web/www/Tabulae/data.txt'
       - 'web/cgi-bin/DivinumOfficium/ParticularCalendar.pm'
       - 'web/cgi-bin/horas/horascommon.pl'

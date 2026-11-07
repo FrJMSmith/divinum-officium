@@ -12,7 +12,9 @@ Selectable stack:
 
 `Rubrics 1960` → country `mexico` → diocese `guadalajara`.
 
-A shared FSSP layer without `usa` was not composed. The running FSSP version remains `usa,fssp`.
+`Rubrics 1960 - FSSP Guadalajara` is the diocese on `Rubrics 1960 - Mexico FSSP`. That base uses `Kalendaria/FSSP.txt` and does not use the USA kalendar. `Rubrics 1960 - FSSP` remains `usa,fssp`. The Fraternity Office days are 22 February, Chair of St. Peter, I class, and 7 March, St. Thomas Aquinas, II class. 1 August on that menu is the upstream file `Sancti/08-01.txt`, Duplex majus, numeric 4. 18 January and 5 November stay Mass only on the USA FSSP layer and are not Office days here. The ordo's Advent Saturday votive Mass of Our Lady is not an Office line in this repository and is not added.
+
+`Rubrics 1960 - San Pedro en Cadenas` adds the quasi-parish. 1 August is the titular, I class, numeric 6, still the text of `Sancti/08-01.txt`. No dedication day is inscribed. 12 October stays Zapopan. Our Lady of the Pillar is not given that day: the diocesan book prints Zapopan as I class and does not call it principal patron (General Rubrics n. 43), while a church titular is I class only when the title is that church's and the church is consecrated or solemnly blessed (n. 45b). Those two conditions are not both settled here, so n. 97 is not used to move either feast.
 
 | Date | Heading | Class printed | Page | Record |
 |---|---|---|---|---|

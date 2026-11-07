@@ -1,0 +1,7 @@
+kind: layer
+id: sanpedro-layer
+scope: apostolate
+name: Quasi-parish of San Pedro en Cadenas
+status: in-use
+selectable: Rubrics 1960 - San Pedro en Cadenas
+summary: Titular of the quasi-parish on top of Rubrics 1960 - FSSP Guadalajara. The church dedication date was not supplied and is not inscribed. Our Lady of the Pillar is not given 12 October.

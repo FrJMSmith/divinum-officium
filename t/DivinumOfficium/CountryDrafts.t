@@ -10,7 +10,7 @@ my @errors = validate_propria();
 ok(!@errors, 'draft records do not break the in-use registry') or diag join("\n", @errors);
 
 my @entries = propria_entries();
-is(scalar(@entries), 34, 'eighteen earlier records plus Mexico and Guadalajara Offices');
+is(scalar(@entries), 35, 'in-use records include the quasi-parish titular');
 
 my @drafts = grep { ($_->{id} || '') =~ /^draft-/ } @entries;
 ok(!@drafts, 'draft ids are not loaded');

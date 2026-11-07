@@ -18,6 +18,7 @@ on:
       - 't/DivinumOfficium/ParticularCalendar.t'
       - 't/DivinumOfficium/Propria.t'
       - 't/DivinumOfficium/StLawrenceOccurrence.t'
+      - 't/DivinumOfficium/CountryDrafts.t'
       - 'docs/proper/**'
       - '.github/workflows/propria.yml'
 
@@ -34,4 +35,4 @@ jobs:
           perl-version: '5.40'
 
       - name: Run particular-calendar tests
-        run: prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t
+        run: prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t

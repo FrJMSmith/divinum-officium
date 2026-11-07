@@ -1,0 +1,25 @@
+id: draft-gdl-05-16
+layer: guadalajara
+scope: diocese
+date: 05-16
+title: S. Joannis Nepomuceni, Martyris
+rank: n/a
+rank_name: II class as printed, not an engine numeric rank
+printed_class: 2
+source_class: II
+office: no
+mass: no
+office_text: pending
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+approved: 2026-11-06 by Fr. Smith
+confirmation: owner-approved
+imprint: not printed in the transcription
+wider_scope: pending
+stack: 1960,mexico,fssp,guadalajara,apostolate
+provenance: owner-supplied
+evidence: heading on printed p. 24
+independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; no separate imprint is printed
+source: Heading gives II class. Why the transcription prints II is not stated. Wider scope is pending. No text is copied. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.

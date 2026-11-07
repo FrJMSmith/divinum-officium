@@ -1,0 +1,17 @@
+kind: layer
+id: draft-mx-layer
+layer: mexico
+scope: country
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+stack: 1960,mexico,fssp,diocese,apostolate
+title: DRAFT incomplete country layer for Mexico. Not selectable.
+provenance: owner-supplied
+approved: 2026-11-06 by Fr. Smith
+confirmation: owner-approved
+imprint: not printed in the transcription
+evidence: Dec 12 national heading, owner-approved 2026-11-06 by Fr. Smith; further national days not entered
+independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; no separate imprint is printed
+source: Desired composition, not active. Universal Rubrics 1960, then this country layer, then a shared FSSP institute layer that does not include usa, then a diocese, then an apostolate. The runtime FSSP version remains usa,fssp and is not changed. No menu name is assigned. The only national candidate entered is Dec 12, from a heading that names the principal patroness of the Mexican nation. No other national feast is entered. Nothing is copied from the USA layer. Guadalajara headings that do not carry that national title stay in the diocese directory. An octave is not in the heading and is not added.

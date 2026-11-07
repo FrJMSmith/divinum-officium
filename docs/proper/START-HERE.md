@@ -17,9 +17,16 @@ upstream calendar and is not this stack.
 | Rubrics 1960 - Harrisburg | Diocese | usa, fssp, harrisburg | In use. Assignment is owner-supplied. |
 | Rubrics 1960 - St. Lawrence | Church / apostolate | usa, fssp, harrisburg, stlawrence | In use. Worked example below. |
 
-No seminary layer is in use. No other apostolate is selectable. Drafts stay
-in [`web/www/Tabulae/Propria/proposals/`](../../web/www/Tabulae/Propria/proposals/README.txt)
-and are not loaded. The file
+No seminary layer is in use. No other apostolate is selectable. The four rows above are the only selectable particular calendars.
+
+Drafts below are not in that table and are not loaded. They keep `status: proposed` and `activates: no`. Fr. Smith approved the Guadalajara transcription on 2026-11-06. Canadian candidates are not in this branch.
+
+| Scope | Place | What is drafted | Read this |
+|---|---|---|---|
+| Country | Mexico | Dec 12 only, from the national heading. Not a full calendar. | [Mexico](mexico.md) |
+| Diocese | Guadalajara | Sixteen headings, including a Lauds commemoration. Not the national layer. | [Guadalajara](guadalajara.md) |
+
+The example file
 [`EXAMPLE-NOT-A-CALENDAR.txt`](../../web/www/Tabulae/Propria/proposals/EXAMPLE-NOT-A-CALENDAR.txt)
 is a template, not a place.
 

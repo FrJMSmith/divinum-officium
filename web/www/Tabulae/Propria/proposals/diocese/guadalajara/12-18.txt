@@ -1,0 +1,25 @@
+id: draft-gdl-12-18
+layer: guadalajara
+scope: diocese
+date: 12-18
+title: In Expectatione Partus B.M.V.
+rank: n/a
+rank_name: not a feast
+printed_class: none
+source_class: commemoration at Lauds only
+office: no
+mass: no
+office_text: pending
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+approved: 2026-11-06 by Fr. Smith
+confirmation: owner-approved
+imprint: not printed in the transcription
+wider_scope: pending
+stack: 1960,mexico,fssp,guadalajara,apostolate
+provenance: owner-supplied
+evidence: heading on printed p. 10; class is not a feast class
+independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; no separate imprint is printed
+source: The heading calls this a commemoration at Lauds only, not a feast. No text is copied. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06. This does not change the running calendar.

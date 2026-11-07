@@ -359,20 +359,18 @@ generateHours() {
 
 
 printTOCEntry() {
-		printf "<td><a href=\"$FILENAME\">${HORAS_NAMES_SHORT[${H}]}</a></td>\n"
+		printf "<li><a href=\"%s\">%s</a></li>\n" "$FILENAME" "${HORAS_NAMES[$H]}"
 }
 
 printTOCDay() {
-		printf "<tr><td>$DAY</td>\n"
+		printf "<h2>%s %s %s</h2>\n<ul>\n" "$DAY" "${MONTHNAMES[$MONTH_NUM_INDEX]}" "$YEAR"
 		foreachHourInDay printTOCEntry
-		printf "</tr>\n"
+		printf "</ul>\n"
 }
 
 outputMonthTOC() {
-	printf "<a name=\"m$MONTH\"><h1>${MONTHNAMES[$MONTH_NUM_INDEX]}</h1></a><table>\n"
+	printf "<h1 id=\"m%s\">%s %s</h1>\n" "$MONTH" "${MONTHNAMES[$MONTH_NUM_INDEX]}" "$YEAR"
 	foreachDayInMonth printTOCDay
-	printf '</table>\n'
-
 }
 
 printTOC_Header() {
@@ -412,9 +410,9 @@ outputYearToFile() {
 	exec > $TOC_FILENAME_YEAR
 	printTOC_Header
 
-	#months links
+	# Month links. The target is the heading id, which XHTML keeps; an <a name> is not a fragment target.
 	for M in $(seq -w 1 12); do
-		printf "<a href=\"#m$M\">$M</a> "
+		printf "<a href=\"#m%s\">%s</a> " "$M" "${MONTHNAMES[$((10#$M - 1))]}"
 	done
 
   foreachMonthInYear outputMonthTOC
@@ -455,8 +453,17 @@ outputMonthOPFSpine() {
 	foreachHourInMonth outputOPFSpineEntry
 }
 
+# Same inputs always yield the same identifier. A different month, year,
+# rubric, language, or office option yields a different one. The OPF and the
+# NCX both use this value.
+book_uuid() {
+	local key="divinum-officium|${1}|${RUBRICS_CODE}|${ALANG}|${BLANG}|${PRIEST}|${VOTIVE}|${MISSA:-0}|${NOFANCYCHARS}"
+	BOOK_UUID=$(EPUB_BOOK_KEY="$key" python3 -c 'import os,uuid; print(uuid.uuid5(uuid.NAMESPACE_URL, os.environ["EPUB_BOOK_KEY"]))')
+}
+
 #Expects the second part of the title as a parameter.
 printOPF_Header() {
+  book_uuid "$1"
   lang_disp=""
   if [[ "$ALANG" != "Latin" ]] || [[ "$ALANG" != "$BLANG}" ]]; then
     lang_disp=" ($ALANG"
@@ -470,23 +477,18 @@ printOPF_Header() {
 printf '<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<meta name="cover" content="cover"/><dc:date>'
-date +"%Y-%m-%dT%H:%M:%S:%z"
-printf "</dc:date><dc:title>Breviarium $1$lang_disp</dc:title>
+<meta name="cover" content="cover"/><dc:date>%s</dc:date><dc:title>Breviarium %s%s</dc:title>
 <dc:creator>Divinum Officium</dc:creator>
 <dc:publisher></dc:publisher>
 <dc:subject></dc:subject>
 <dc:description></dc:description>
-<dc:created>"
-date +"%Y-%m-%dT%H:%M:%S:%z"
-printf "</dc:created>
-<dc:language>$ALANG_CODE</dc:language>"
+<dc:language>%s</dc:language>' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" "$lang_disp" "$ALANG_CODE"
 if [[ "$ALANG" != "$BLANG" ]]; then
   printf "
 <dc:language>$BLANG_CODE</dc:language>"
 fi
 printf "
-<dc:identifier id=\"uuid_id\" opf:scheme=\"uuid\">f85e2f34-fa9b-4211-ad58-2c74dc43861f</dc:identifier>
+<dc:identifier id=\"uuid_id\" opf:scheme=\"uuid\">%s</dc:identifier>
 </metadata>
 <manifest>
 <item id=\"toc\" media-type=\"application/xhtml+xml\" href=\"$TOC_FILENAME\" />
@@ -494,7 +496,7 @@ printf "
 <item id=\"cover\" href=\"$COVER_FILENAME\"  media-type=\"image/jpeg\" />
 <item href=\"titlepage.xhtml\" id=\"titlepage\" media-type=\"application/xhtml+xml\" />
 <item href=\"about.xhtml\" id=\"aboutpage\" media-type=\"application/xhtml+xml\" />
-"
+" "$BOOK_UUID"
 }
 
 printOPF_Middle() {
@@ -522,8 +524,9 @@ outputMonthToFileOPF() {
 	exec 6>&1
 	exec > "breviarium$YEAR-$MONTH$RUBRICS_NAME.opf"
 	TOC_FILENAME=$TOC_FILENAME_MONTH
+	BOOK_LABEL="$YEAR-$MONTH$RUBRICS_NAME"
 
-  printOPF_Header "$YEAR-$MONTH$RUBRICS_NAME"
+  printOPF_Header "$BOOK_LABEL"
   outputMonthOPF
   printOPF_Middle
   outputMonthOPFSpine
@@ -538,7 +541,8 @@ outputYearToFileOPF() {
   exec > "breviarium$YEAR$RUBRICS_NAME.opf"
 
   TOC_FILENAME=$TOC_FILENAME_YEAR
-  printOPF_Header "$YEAR$RUBRICS_NAME"
+  BOOK_LABEL="$YEAR$RUBRICS_NAME"
+  printOPF_Header "$BOOK_LABEL"
   foreachMonthInYear outputMonthOPF
   printOPF_Middle
   foreachMonthInYear outputMonthOPFSpine
@@ -572,7 +576,7 @@ initEPUB() {
 	cp $WDIR/$OPF_FILENAME $WDIR/content.opf
 
 	#mimetype
-	echo 'application/epub+zip' > "$WDIR/mimetype"
+	printf 'application/epub+zip' > "$WDIR/mimetype"
 
 	#container.xml
 
@@ -586,12 +590,13 @@ initEPUB() {
 CONTAINER
 
 	#toc.ncx
+	book_uuid "$BOOK_LABEL"
 	cat >"$WDIR/toc.ncx" <<CONTAINER
 <?xml version='1.0' encoding='utf-8'?>
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="la">
   <head>
-    <meta content="f85e2f34-fa9b-4211-ad58-2c74dc43861f" name="dtb:uid"/>
-    <meta content="2" name="dtb:depth"/>
+    <meta content="$BOOK_UUID" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
     <meta content="0" name="dtb:totalPageCount"/>
     <meta content="0" name="dtb:maxPageNumber"/>
   </head>
@@ -613,6 +618,8 @@ CONTAINER
 	</navPoint>
 
 CONTAINER
+	NAV_ID=2
+	PLAYORDER_NUM=2
 	#will be finished later
 
 	#titlepage.xhtml
@@ -639,22 +646,52 @@ cat >"$WDIR/titlepage.xhtml" <<CONTAINER
 CONTAINER
 }
 
-outputTOCNCXEntry() {
-	PLAYORDER_NUM=$(( PLAYORDER_NUM+1 ))
-	cat >>"$WDIR/toc.ncx" <<CONTAINER
-	<navPoint id="navPoint-$(( PLAYORDER_NUM ))" playOrder="$(( PLAYORDER_NUM ))">
-	<navLabel>
-	<text>$MONTH - $DAY</text>
-	</navLabel>
-	<content src="$FILENAME" />
-	</navPoint>
-CONTAINER
+appendNCXPointOpen() {
+	NAV_ID=$(( NAV_ID + 1 ))
+	if [[ "${1:-}" != same ]]; then
+		PLAYORDER_NUM=$(( PLAYORDER_NUM + 1 ))
+	fi
+	cat >>"$WDIR/toc.ncx" <<EOF
+<navPoint id="navPoint-${NAV_ID}" playOrder="${PLAYORDER_NUM}">
+<navLabel><text>${2}</text></navLabel>
+<content src="${3}"/>
+EOF
+}
+
+appendNCXPointClose() {
+	echo '</navPoint>' >>"$WDIR/toc.ncx"
+}
+
+# One day: the day opens Matins, and the Matutinum entry opens that same file,
+# so those two entries share a playOrder. Each later hour has its own file.
+appendDayNCX() {
+	local matins
+	H=0
+	formatFilename
+	matins=$FILENAME
+	appendNCXPointOpen next "$DAY ${MONTHNAMES[$MONTH_NUM_INDEX]} $YEAR" "$matins"
+	appendNCXPointOpen same "Matutinum" "$matins"
+	appendNCXPointClose
+	for H in $(seq 1 "$HORA_INDEX_LAST"); do
+		formatFilename
+		appendNCXPointOpen next "${HORAS_NAMES[$H]}" "$FILENAME"
+		appendNCXPointClose
+	done
+	appendNCXPointClose
+}
+
+# One month, nested under the contents heading for that month.
+appendMonthNCX() {
+	appendNCXPointOpen next "${MONTHNAMES[$MONTH_NUM_INDEX]} $YEAR" "${TOC_FILENAME}#m${MONTH}"
+	foreachDayInMonth appendDayNCX
+	appendNCXPointClose
 }
 
 initEPUB_End() {
-	PLAYORDER_NUM=$(( PLAYORDER_NUM+1 ))
+	NAV_ID=$(( NAV_ID + 1 ))
+	PLAYORDER_NUM=$(( PLAYORDER_NUM + 1 ))
 	cat >>"$WDIR/toc.ncx" <<CONTAINER
-	<navPoint id="navPoint-$(( PLAYORDER_NUM ))" playOrder="$(( PLAYORDER_NUM ))">
+	<navPoint id="navPoint-${NAV_ID}" playOrder="${PLAYORDER_NUM}">
 	<navLabel>
 	<text>About</text>
 	</navLabel>
@@ -703,12 +740,11 @@ createEPUBMonth() {
 	OPF_FILENAME="breviarium$YEAR-$MONTH$RUBRICS_NAME.opf"
 	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR-$MONTH$RUBRICS_NAME.epub"
 	TOC_FILENAME=$TOC_FILENAME_MONTH
+	BOOK_LABEL="$YEAR-$MONTH$RUBRICS_NAME"
 	TITLE="Divinum Officium$RUBRICS_NAME - $YEAR-$MONTH"
 
 	initEPUB
-	PLAYORDER_NUM=2
-	H=0
-	foreachDayInMonth outputTOCNCXEntry
+	appendMonthNCX
 	initEPUB_End 1>&2 "${EPUB_FILENAME}.log"
 
 	makeEPUBfilelistMonth 1>&2 "${EPUB_FILENAME}.log"
@@ -729,12 +765,11 @@ createEPUBYear() {
 	OPF_FILENAME="breviarium$YEAR$RUBRICS_NAME.opf"
 	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR$RUBRICS_NAME.epub"
 	TOC_FILENAME=$TOC_FILENAME_YEAR
+	BOOK_LABEL="$YEAR$RUBRICS_NAME"
 	TITLE="Divinum Officium$RUBRICS_NAME - $YEAR - $lang_name"
 
 	initEPUB
-	PLAYORDER_NUM=0
-	H=0
-	foreachDayInYear outputTOCNCXEntry
+	foreachMonthInYear appendMonthNCX
 	initEPUB_End 1>&2 "${EPUB_FILENAME}.log"
 
 	makeEPUBfilelistYear 1>&2 "${EPUB_FILENAME}.log"
@@ -789,6 +824,14 @@ createMOBIs() {
 #################################################################################################################
 #  launch
 #################################################################################################################
+# Placeholder hours let the navigation package be checked without the office engine.
+# Unset in ordinary use, so generateHour still runs EofficiumXhtml.pl.
+if [[ "${EPUBGEN_NAV_ONLY:-}" == 1 ]]; then
+	generateHour() {
+		printf '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="la"><head><title>%s</title></head><body><p>%s</p></body></html>\n' "${HORAS_NAMES[$H]}" "${HORAS_NAMES[$H]}" > "$WDIR/$FILENAME"
+	}
+fi
+
 generateHours #generate the main HTML files
 generateTOCs #generate Table Of Content main HTML pages (used by both EPUB and MOBI formats)
 generateOPF  #generate OPF files (descriptors needed both for the EPUB and for the kindlegen to generate MOBI)

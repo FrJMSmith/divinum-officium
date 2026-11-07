@@ -1,0 +1,33 @@
+name: EPUB navigation
+
+# Checks the epubgen2 contents package. The office engine is not run: the
+# generator is invoked with placeholder hour files. The calendar and escaping
+# tests run on the same commit.
+
+on:
+  pull_request:
+    paths:
+      - 'standalone/tools/epubgen2/**'
+      - 't/epubgen2/**'
+      - '.github/workflows/epub-nav.yml'
+
+jobs:
+  epub-nav:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Perl
+        uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: '5.40'
+
+      - name: Install cal
+        run: sudo apt-get update && sudo apt-get install -y ncal
+
+      - name: Calendar and escaping regressions
+        run: prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t t/DivinumOfficium/GuadalajaraOffice.t t/DivinumOfficium/FSSPGuadalajara.t t/DivinumOfficium/UpstreamMissa.t t/DivinumOfficium/Xhtml.t
+
+      - name: Month, year, and cross-year contents
+        run: bash t/epubgen2/navigation.sh

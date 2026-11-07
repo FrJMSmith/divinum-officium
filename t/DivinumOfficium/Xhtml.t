@@ -4,7 +4,7 @@ use utf8;
 
 use lib 'web/cgi-bin';
 use DivinumOfficium::Xhtml qw(xhtml_escape);
-use Test2::V0;
+use Test::More;
 
 # 18 January 2027, Rubrics 1960 particular calendar: the comment joins
 # the commemoration and the votive Mass with a bare ampersand.

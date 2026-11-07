@@ -1,0 +1,14 @@
+kind: layer
+id: draft-guadalajara-layer
+layer: guadalajara
+scope: diocese
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+stack: 1960,mexico,fssp,guadalajara,apostolate
+title: DRAFT diocese place for Guadalajara. Not selectable.
+provenance: owner-supplied
+evidence: headings in a modern transcription whose original edition and approval are not identified
+independent_source: pending
+source: This directory is the diocese place, not the national Mexico layer. The transcription uses class numbers. That does not identify the edition or an approval, and it does not by itself prove which days are national. Wider scope stays pending except where a heading itself uses a national title; that heading is the Dec 12 country record, not a file here. No prayer or reading is copied. Desired composition, not active: universal 1960, Mexico, a shared FSSP layer that does not include usa, this diocese, then an apostolate. The runtime calendars are unchanged. Another list of local days is not treated as confirmation.

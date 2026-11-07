@@ -1,0 +1,24 @@
+id: draft-gdl-11-11
+layer: guadalajara
+scope: diocese
+date: 11-11
+title: S. Martini Ep. et Conf.
+rank: n/a
+rank_name: II class as printed, not an engine numeric rank
+printed_class: 2
+source_class: II
+office: no
+mass: no
+office_text: pending
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+confirmation: unconfirmed
+edition: unknown
+wider_scope: pending
+stack: 1960,mexico,fssp,guadalajara,apostolate
+provenance: owner-supplied
+evidence: heading on printed p. 48
+independent_source: pending
+source: Heading gives II class. On 11 Nov 2026, Rubrics 1960 - 1960 kept Sancti/11-11.txt, S. Martini, rank 3, with S. Mennas commemorated. The transcription does not state why it prints II. Another list of this day is not confirmation. No text is copied. The original edition and any approval are not identified. The running calendar is unchanged.

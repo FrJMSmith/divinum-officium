@@ -1,0 +1,25 @@
+id: draft-mx-12-12
+layer: mexico
+scope: country
+date: 12-12
+title: B. Mariæ Virginis de Guadalupe, Patronæ primariæ Nationis Mexicanæ et Americæ Latinæ
+rank: n/a
+rank_name: I class as printed in the transcription heading, not an engine numeric rank
+printed_class: 1
+source_class: I
+office: no
+mass: no
+office_text: pending
+kalendar:
+file:
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+confirmation: unconfirmed
+edition: unknown
+stack: 1960,mexico,fssp,diocese,apostolate
+provenance: owner-supplied
+evidence: heading on printed p. 1 of a modern transcription whose original edition and approval are not identified
+independent_source: pending
+source: The heading names her principal patroness of the Mexican nation and of Latin America, class I. That heading is why this one candidate sits in the country directory. The transcription is owner-supplied and not independently confirmed. Metadata about the file does not authenticate the date or the rank. Office and Mass texts are not copied. An octave is not in the heading and is not added. This is not Kalendaria/USA1962.txt. Kalendaria/1955.txt has 12-12=XXXXX, and Rubrics 1960 - 1960 on 12 Dec 2025, 2026, and 2027 did not name Guadalupe. Those repository observations are not a Mexican rank.

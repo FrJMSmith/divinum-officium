@@ -1,0 +1,14 @@
+kind: layer
+id: draft-ca-layer
+layer: canada
+scope: country
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+stack: 1960,canada,fssp,diocese,apostolate
+title: DRAFT incomplete country layer for Canada. Not a selectable calendar.
+provenance: owner-supplied
+evidence: owner-approved FSSP North American Ordo 2026, printed pages only
+independent_source: pending
+source: Desired composition, not active. Universal Rubrics 1960, then this country layer, then a shared FSSP institute layer that does not include usa, then a diocese, then an apostolate. The runtime FSSP version remains usa,fssp and is not changed. No menu name is assigned. This is not a complete national calendar. OPC-1962 and the Canadian missal supplement are cited by that ordo and are not in this repository.

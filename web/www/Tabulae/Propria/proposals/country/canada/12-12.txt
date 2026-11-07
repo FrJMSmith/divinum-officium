@@ -1,0 +1,25 @@
+id: draft-ca-12-12
+layer: canada
+scope: country
+date: 12-12
+title: Our Lady of Guadalupe
+rank: n/a
+rank_name: 3rd class as printed in the ordo, not an engine numeric rank
+printed_class: 3
+color_in_source: white
+gloria_in_source: yes
+preface_in_source: of the Blessed Virgin
+office: no
+mass: no
+office_text: pending
+kalendar:
+file:
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+stack: 1960,canada,fssp,diocese,apostolate
+provenance: owner-supplied
+evidence: owner-approved FSSP North American Ordo 2026, printed pp. 12-13 and 40-41
+independent_source: pending
+source: Printed as CAN and USA, class 3, white, Gloria, preface of the Blessed Virgin. This is not copied from Kalendaria/USA1962.txt. The ordo says OPC-1962 lists the day ubi conceditur, and it cites a Congregation text of 25 March 1999 for an extension to the Americas. Neither text is in this repository. The 1999 citation is later than 1962. Whether the draft should treat the day as a 1962 Canadian national concession or as that later extension is not decided. In Advent the ordo commemorates the feria; the 2026 Saturday printing shows the line with a feria of Advent. Those are observations of those pages, not a rule adopted here. No octave is entered. No Office text is generated.

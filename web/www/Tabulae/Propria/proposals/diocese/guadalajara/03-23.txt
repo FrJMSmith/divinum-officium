@@ -1,0 +1,24 @@
+id: draft-gdl-03-23
+layer: guadalajara
+scope: diocese
+date: 03-23
+title: S. Turibii de Mogrovejo
+rank: n/a
+rank_name: II class as printed, not an engine numeric rank
+printed_class: 2
+source_class: II
+office: no
+mass: no
+office_text: pending
+status: proposed
+completeness: incomplete
+activates: no
+inherits_usa: no
+confirmation: unconfirmed
+edition: unknown
+wider_scope: pending
+stack: 1960,mexico,fssp,guadalajara,apostolate
+provenance: owner-supplied
+evidence: heading on printed p. 17
+independent_source: pending
+source: Heading gives II class on Mar 23. Kalendaria/1960.txt has no 03-23 line. Sancti/04-27.txt is S. Petri Canisii, and on 27 Apr 2026 Rubrics 1960 - 1960 kept that file at rank 3. Sancti/03-23n.txt names Turibius and is not assigned by Kalendaria/1960.txt. This draft does not assert a universal date for Turibius. No text is copied. The original edition and any approval are not identified.

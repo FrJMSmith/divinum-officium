@@ -1,0 +1,20 @@
+@Commune/C11
+
+[Officium]
+In Expectatione Partus B. Mariæ
+
+[Rank]
+;;Commemoratio;;1.1;;ex C11
+
+[Rule]
+ex C11;
+
+[Ant 2]
+Super sólium David, et super regnum ejus sedébit in ætérnum.
+
+[Versum 2]
+Spíritus sanctus supervéniet in te. R. Et virtus Altíssimi obumbrábit tibi.
+
+[Oratio]
+Deus, qui de beátæ Mariæ Vírginis útero, Verbum tuum, Angelo nuntiánte, carnem suscípere voluísti: præsta supplícibus tuis: ut, qui vere eam Genitrícem Dei crédimus, ejus apud te intercessiónibus adjuvémur.
+$Per eumdem

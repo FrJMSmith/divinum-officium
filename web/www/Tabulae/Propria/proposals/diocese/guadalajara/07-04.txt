@@ -1,5 +1,5 @@
 id: draft-gdl-07-04
-layer: guadalajara
+layer: guadalajara-note
 scope: diocese
 date: 07-04
 title: B.M.V. titulo Refugium Peccatorum

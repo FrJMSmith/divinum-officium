@@ -66,10 +66,10 @@ for a day whose record is no longer the example template.
 From the repository root:
 
 ```
-prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t
+prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t t/DivinumOfficium/GuadalajaraOffice.t
 ```
 
-The first three files are the 137 tests for the calendars that already run. `CountryDrafts.t` checks that the Mexico and Guadalajara drafts stay proposed and out of the menus. Canada is not part of this branch. None of this scans every Easter date.
+`GuadalajaraOffice.t` checks the selectable Office, the printed antiphons, and the collisions named in [Guadalajara](guadalajara.md). Canada is not part of this branch. None of this scans every Easter date.
 
 The GitHub workflow file `.github/workflows/propria.yml` runs the same
 command. Its name is `Particular calendar` and its job is `propria-tests`.

@@ -1,5 +1,5 @@
 id: draft-gdl-11-11
-layer: guadalajara
+layer: guadalajara-note
 scope: diocese
 date: 11-11
 title: S. Martini Ep. et Conf.
@@ -22,4 +22,4 @@ stack: 1960,mexico,fssp,guadalajara,apostolate
 provenance: owner-supplied
 evidence: heading on printed p. 48
 independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; no separate imprint is printed
-source: Heading gives II class. On 11 Nov 2026, Rubrics 1960 - 1960 kept Sancti/11-11.txt, S. Martini, rank 3, with S. Mennas commemorated. The transcription does not state why it prints II. No text is copied. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06. The running calendar is unchanged.
+source: Heading gives II class. On 11 Nov 2026, Rubrics 1960 - 1960 kept Sancti/11-11.txt, S. Martini, rank 3, with S. Mennas commemorated. The transcription does not state why it prints II. The Office text, where the heading prints one, is in the overlay file named by the in-use record. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.

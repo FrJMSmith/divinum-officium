@@ -16,15 +16,19 @@ upstream calendar and is not this stack.
 | Rubrics 1960 - FSSP | Religious institute | usa, fssp | In use. Assignment is owner-supplied. |
 | Rubrics 1960 - Harrisburg | Diocese | usa, fssp, harrisburg | In use. Assignment is owner-supplied. |
 | Rubrics 1960 - St. Lawrence | Church / apostolate | usa, fssp, harrisburg, stlawrence | In use. Worked example below. |
+| Rubrics 1960 - Mexico | Country | mexico | Office only. Dec 12. Not in the Mass menu. |
+| Rubrics 1960 - Guadalajara | Diocese | mexico, guadalajara | Office only. Not in the Mass menu. |
 
-No seminary layer is in use. No other apostolate is selectable. The four rows above are the only selectable particular calendars.
+No seminary layer is in use. Canada is not in this branch. The Guadalajara stack does not include `usa` or `fssp`. The running FSSP version still inherits the United States layer, and it was not recomposed here.
 
-Drafts below are not in that table and are not loaded. They keep `status: proposed` and `activates: no`. Fr. Smith approved the Guadalajara transcription on 2026-11-06. Canadian candidates are not in this branch.
+The Office label to select is **Rubrics 1960 - Guadalajara**. Mexico is selectable on its own for the national Guadalupe Office. Neither name is in `missa.dialog`. No Mass proper was in the source, and none was added. This repository is the generator. It is not a deployed public site.
 
-| Scope | Place | What is drafted | Read this |
+Fr. Smith approved the transcription on 2026-11-06. The records-only merge is pull request 7, commit `f6f247a513`. The proposal files under `proposals/` remain approval notes. They are not kalendar lines. Clement, 23 November, stays on the universal Office because the page prints no class.
+
+| Scope | Place | What is in the Office | Read this |
 |---|---|---|---|
 | Country | Mexico | Dec 12 only, from the national heading. Not a full calendar. | [Mexico](mexico.md) |
-| Diocese | Guadalajara | Sixteen headings, including a Lauds commemoration. Not the national layer. | [Guadalajara](guadalajara.md) |
+| Diocese | Guadalajara | Fifteen Offices and the 18 December commemoration. Not the national layer. | [Guadalajara](guadalajara.md) |
 
 The example file
 [`EXAMPLE-NOT-A-CALENDAR.txt`](../../web/www/Tabulae/Propria/proposals/EXAMPLE-NOT-A-CALENDAR.txt)
@@ -109,7 +113,7 @@ precedence days that function lists. It does not replace the Office.
 From the repository root:
 
 ```
-prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t
+prove -Iweb/cgi-bin t/DivinumOfficium/ParticularCalendar.t t/DivinumOfficium/Propria.t t/DivinumOfficium/StLawrenceOccurrence.t t/DivinumOfficium/CountryDrafts.t t/DivinumOfficium/GuadalajaraOffice.t
 ```
 
 `perl web/cgi-bin/horas/stlawrence-check.pl --scan` prints 2025–2027.

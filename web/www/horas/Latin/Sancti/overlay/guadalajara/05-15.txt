@@ -1,0 +1,21 @@
+@Commune/C5
+
+[Officium]
+S. Isidori Agricolæ Confessoris
+
+[Rank]
+;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5;
+9 lectiones
+
+[Oratio]
+Da nobis, quæsumus, miséricors Deus, beáto Isidóro Agrícola Confessóre tuo intercedénte supérbe non sápere: sed eius méritis et exémplis plácita tibi semper humilitáte deservíre.
+$Per Dominum
+
+[Ant 2]
+Exiit qui séminat * semináre semen suum, et aliud cécidit in terram bonam, et ortum fecit fructum céntuplum.
+
+[Ant 3]
+Ecce homo agrícola * iste fuit, quóniam Adam exémplum eius ab adolescéntia sua, ad serviéndum Deo vivénti.

@@ -479,6 +479,14 @@ sub validate_propria {
     }
 
     for my $row (values %by_version) {
+      my $office_only = ($row->{office_only} || '') eq 'yes';
+
+      # An Office proper with no Mass texts is selectable in horas only.
+      if ($menu eq 'missa' && $office_only) {
+        _push_err(\@errors, "missa.dialog lists Office-only $row->{version}")
+          if index($text, $row->{version}) >= 0;
+        next;
+      }
       _push_err(\@errors, "$menu.dialog does not list $row->{version}") if index($text, $row->{version}) < 0;
     }
     _push_err(\@errors, "$menu.dialog no longer lists Rubrics 1960 - 2020 USA")

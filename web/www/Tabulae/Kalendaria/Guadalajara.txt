@@ -1,0 +1,20 @@
+# Diocese of Guadalajara, over Rubrics 1960 - Mexico.
+# Dec 12 is inherited from Mexico and is not repeated here.
+# Nov 23 is not listed: the source prints no class for Clement.
+# Feb 5 keeps Agatha, the universal office, as the commemoration.
+# Source records: Tabulae/Propria/diocese/guadalajara/.
+12-18=overlay/guadalajara/12-18
+01-24=overlay/guadalajara/01-24
+02-05=overlay/guadalajara/02-05~02-05
+02-25=overlay/guadalajara/02-25
+03-02=overlay/guadalajara/03-02
+03-23=overlay/guadalajara/03-23
+05-15=overlay/guadalajara/05-15
+05-16=overlay/guadalajara/05-16
+07-04=overlay/guadalajara/07-04
+08-17=overlay/guadalajara/08-17
+08-30=overlay/guadalajara/08-30
+10-12=overlay/guadalajara/10-12
+10-21=overlay/guadalajara/10-21
+10-22=overlay/guadalajara/10-22
+11-11=overlay/guadalajara/11-11

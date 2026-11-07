@@ -1,5 +1,5 @@
 id: draft-gdl-08-17
-layer: guadalajara
+layer: guadalajara-note
 scope: diocese
 date: 08-17
 title: B. Bartholomæi Laurel, Martyris
@@ -22,4 +22,4 @@ stack: 1960,mexico,fssp,guadalajara,apostolate
 provenance: owner-supplied
 evidence: heading on printed p. 34
 independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; no separate imprint is printed
-source: Heading gives III class. Wider scope is pending. No text is copied. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.
+source: Heading gives III class. Wider scope is pending. The Office text, where the heading prints one, is in the overlay file named by the in-use record. The transcription does not print an imprint. Fr. Smith approved this supplied source on 2026-11-06.

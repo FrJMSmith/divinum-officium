@@ -1,0 +1,11 @@
+@Commune/C11
+
+[Officium]
+S. Mariæ Pacis
+
+[Rank]
+;;Duplex;;3;;ex C11
+
+[Rule]
+ex C11;
+9 lectiones

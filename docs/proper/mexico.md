@@ -1,14 +1,14 @@
-# Mexico — draft, not selectable
+# Mexico — Office, Dec 12 only
 
-Status: **incomplete draft**. No menu. The loader does not read it. Completeness is not claimed. Fr. Smith approved the supplied source on 2026-11-06. The transcription does not print an imprint; that gap is not a reason to refuse it.
+Status: **selectable in the Office menu as Rubrics 1960 - Mexico**. Base is Rubrics 1960 - 1960. The layer does not inherit the United States calendar. The Mass menu does not list it. Completeness of a national calendar is not claimed. Fr. Smith approved the supplied source on 2026-11-06. The transcription does not print an imprint; that gap is not a reason to refuse it.
 
 Place: [`proposals/country/mexico/`](../../web/www/Tabulae/Propria/proposals/country/mexico/_layer.txt).
 
-Desired composition, not active:
+Selectable stack:
 
-`Rubrics 1960` → country `mexico` → shared FSSP institute layer **without** `usa` → diocese → apostolate.
+`Rubrics 1960` → country `mexico`.
 
-The FSSP version that runs today stays `usa,fssp`. No Office text is generated.
+The FSSP version that runs today stays `usa,fssp`. It is not the parent of this layer. The Office text is `web/www/horas/Latin/Sancti/overlay/mexico/12-12.txt`. No Mass proper was supplied.
 
 One national candidate is entered, because its heading names the principal patroness of the Mexican nation:
 
@@ -16,6 +16,6 @@ One national candidate is entered, because its heading names the principal patro
 |---|---|---|---|
 | 12-12 | B. Mariæ Virginis de Guadalupe, Patronæ primariæ Nationis Mexicanæ et Americæ Latinæ | I | [12-12](../../web/www/Tabulae/Propria/proposals/country/mexico/12-12.txt) |
 
-No Office or Mass text is copied. An octave is not in the heading and is not added. The USA layer is not the parent of this record.
+An octave is not in the heading and is not added. The USA layer is not the parent of this record. Spellings follow the PDF text layer, including `suplícibus`, `Praclara`, `formosíssma`, and `rubéta`. Those were not normalized. When 12 December is the Sunday of Advent, as in 2027, the Sunday is kept and Guadalupe is commemorated. No transfer line was added.
 
 Other headings from that transcription do not carry this national title. They stay under [Guadalajara](guadalajara.md), with wider scope still pending. No further national feast is entered.

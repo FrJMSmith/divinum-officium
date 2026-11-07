@@ -1,0 +1,147 @@
+@Commune/C2
+
+[Officium]
+S. Philippi a Jesu
+
+[Rank]
+;;Duplex;;3;;vide C2
+
+[Rule]
+vide C2;
+9 lectiones
+
+[Oratio]
+Deus, qui inter primos Japóniæ Mártyres beátum Philíppum cruci alligátum, triplicíque láncea confóssum, primum ómnium martyrio coronásti: concéde propítius; ut ejúsdem nos suffúlti patrocínio, cum illo páriter coronémur in cælis.
+$Per Dominum
+
+[Hymnus Matutinum]
+Salve, triumphális pugil,
+Decus novi orbis máximum,
+Qui morte fecísti tua
+Beatiórem pátriam
+Athléta princeps Méxici,
+Trophæa celsa Mártyrum
+Dignámque cælo láuream
+Tu primus infers pátriæ.
+Quidquid juvéntus férvida
+Peccáverat licéntia,
+Libénter in mortem ruens
+Sancta expiásti víctima.
+Tui fac ut nos æmuli,
+Dolóre cordis íntimo.
+Jugíque pœniténtia,
+Nostra eluámus crímina.
+Deo Patri sit glória,
+Ejúsque soli Fílio,
+Sanctóque item Paráclito
+Per omne semper sæculum.
+Amen.
+
+[Lectio1]
+Lectio iij
+Philíppus de las Casas, sive a Jesu,
+Méxici Hispánis paréntibus natus,
+ea adoléscens vivébat libertáte ac
+licéntia, ut ipsísmet paréntibus ídeo
+prope esset exósus; quod ita illíus
+púpugit ánimum, divíno simul
+grátia illustrátum, ut Franciscánum
+institútum arrípere statúerit.
+Sumpto tamen hábitu, nec satis
+gnarus quam árduum cum cállido
+hoste iniísset certámen, cessit illíus
+illécebris, abiítque e Religióne. Ea
+inconstántia tantum dolórem
+paréntibus á ulit, ut, ne ipsórum
+perpétuo vulneráret obtútum, in
+Chinam eum negotiatiónis ergo
+ablegárint. Aliquánto post témpore,
+cogitántem quam periculósam in
+libertáte pátria procul vitam ágeret,
+quæque in Religióne (Deo quoque
+ad ea ruminánda impellénte)
+vidísset ac reliquísset bona, novus
+ardor accéndit et hæc postlimínio
+repeténdi, et toto ánimo divíni
+spíritus instínctibus obsequéndi,
+Manílam ergo, néscio cujus negótii
+causa, proféctus, eo absolúto, ambit
+dénuo religiósum hábitum et
+impetrat in cœnóbio sanctæ Maríæ
+de Angelis patrum Minórum
+Excalceatórum, ubi egrégia
+approbatióne perácto tirocínio,
+solémnia demum vota proféssus est.
+Huius mutatiónis perláto Méxicum
+núntio, veheménter exhilaráti
+paréntes suprémum órdinis in India
+præsidem, quem Commissárium
+generálem appéllant (is tunc Méxici
+erat), óbsecrant, fílium sibi in
+seráphico illo hábitu vidére ut per
+eum liceat. Lubens piis paréntibus ea
+in re gratificátus Commissárius,
+scripsit in Philippínas, ut conféstim
+Méxicum Philíppus mi erétur. Ea
+causa navem sancti Philíppi tutélæ
+créditam atque insignítam nómine
+conscéndit: quæ vi tempestátis
+convúlsa, et in Urándum Tuzzáni
+regni portum ejécta, ipse brevi
+portum ætérnæ beatitúdinis láurea
+martyrii redimítus ténuit. Omen
+Philíppo martyrii fuit, quod dum
+procéllis jactarétur, in qua is erat
+sancti Philíppi navis, ea parte cæli,
+quæ Japónem respiciébat, vidit
+crucem cándidam, figúra expréssam
+símili earum, in quas dein subláti
+mártyres fuére; post in sanguíneum
+colórem mutásse ítidem ad horæ
+quadrántem: demum nigra nube
+obvolútam. Omini respóndit
+evéntus. Nam sæviénte in Japónia
+advérsus christiánæ fidei præcónes
+persecutióne, beátus Philíppus in
+víncula conjéctus, et cum áliis sóciis
+fuit morte damnátus. Perdúctus
+ítaque in triumphálem campum,
+parátam sibi crucem pósitis humi
+génibus amplexátus in hæc prorúpit
+verba: O fortunátam navem! O
+felícem sancti Philíppi galeónem! O
+jactúram mihi mínime damnósam,
+sed omni lucro quæstuosiórem! Ei
+cruci, dum transversárium lignum
+inséritur cui qui pendet utcúmque
+insídeat, fallénte mensúra quam solo
+fortásse intúitu faber collégerat,
+demíssius aliquánto pósitum est
+quam ut inníti beátus Martyr posset.
+Quam ob rem erécta cruce, cui sancti
+viri alligáta férreis vínculis bráchia,
+collum ac tíbiæ erant, ita subsédit
+póndere suo corpus, ut ea numélla
+quæ gu ur stringébat, pene
+suffocarétur: magno ígitur fervóre
+ánimi: Jesu! Jesu! inclámat. Quo
+animadvérso judex priúsquam
+strangularétur, configi lánceis jubet:
+atque ita primus ómnium tríplici
+lánceæ ictu palmam martýrii
+obtínuit, qui postrémus in Japóniam
+vénerat. De eódem et de vigínti
+quinque martýrii sóciis Urbánus
+octávus Póntifex máximus, Offícium
+recitári et Missam respectíve
+celebrári concéssit Ipsíus autem
+beáti Philíppi glória magna
+devotióne Méxici cólitur, dicáto in
+illíus honórem templo, et
+Cappuccinárum vírginum insígni
+cœnóbio. Pius vero Papa nonus anno
+millésimo octingentésimo
+sexagésimo séptimo cum sæculária
+Apostolórum Príncipum solémnia
+celebraréntur, Sanctórum fastis
+accénsuit.

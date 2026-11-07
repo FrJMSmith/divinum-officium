@@ -1,0 +1,17 @@
+@Commune/C11
+
+[Officium]
+B. Mariæ Virg. titulo Refugium Peccatorum
+
+[Rank]
+;;Duplex II classis;;5;;ex C11
+
+[Rule]
+ex C11;
+Psalmi Dominica
+9 lectiones
+Antiphonas horas
+
+[Oratio]
+Omnípotens et miséricors Deus, qui in beáta semper Vírgine María peccatórum refúgium et auxílum collocásti: concéde; ut, ipsa protegénte, a culpis ómnibus absolúti, misericórdiæ tuæ efféctum felícem consequámur.
+$Per Dominum

@@ -1,0 +1,15 @@
+id: gdl-02-05
+layer: guadalajara
+scope: diocese
+date: 02-05
+title: S. Philippi a Jesu
+rank: 3
+rank_name: Duplex
+office: yes
+mass: no
+kalendar: overlay/guadalajara/02-05~02-05
+provenance: owner-supplied
+status: in-use
+evidence: owner-approved Officia propria, 2026-11-06 by Fr. Smith
+independent_source: owner-approved source supplied by Fr. Smith on 2026-11-06; imprint pending
+source: Selectable Office. The kalendar line is 02-05=overlay/guadalajara/02-05~02-05. Mass propers were not in the source and are not supplied. Spellings follow the PDF text layer.

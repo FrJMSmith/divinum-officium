@@ -1,0 +1,339 @@
+@Commune/C6a
+
+[Officium]
+S. Rosæ a S. Maria Virginis Limanæ
+
+[Rank]
+;;Duplex I classis;;6;;ex C6a
+
+[Rule]
+ex C6a;
+Psalmi Dominica
+9 lectiones
+Antiphonas horas
+
+[Oratio]
+Bonórum ómnium largítor, omnípotens Deus, qui beátam Rosam, cæléstis grátiæ rore prævéntam, virginitátis et patiéntiæ decóre Indis floréscere voluísti: da nobis fámulis tuis ; un in odórem suavitátis ejus curréntes, Christi bonus odor éffici mereámur
+$Qui tecum
+
+[Ant 1]
+Benedícta tu * a Deo tuo, Rosa, in omni tabernáculo Jacob: quóniam in omni gente, quæ audíerit nomen tuum, super te Deus Israël magnificábitur.
+
+[Ant 2]
+O Rosa odorífera, * spargens ubíque virtútum odórem, fac nos ejus, qua frúeris, lucis suavitatísque partícipes.
+
+[Ant 3]
+Rosa, soror nostra, * bene sit nobis propter te, et vivat ánima nostra ob grátiam tui.
+
+[Hymnus Matutinum]
+Tellúris omnes íncolæ
+Rosæ plaudant solémniis
+Ejúsque laudes cóncinant.
+A solis ortu ad Vésperum.
+Hæc a paréntis úbere
+Prævénta donis grátiæ,
+Deóque plena, víndicem
+Armávit in se déxteram.
+Miris modis innóxios
+Afflíxit artus, spíneis
+Cinxit coróllis vérticem,
+Cibósque felle pólluit.
+Nunc læta, pœniténtiæ
+Largo potítur præmio:
+Novúmque psallit cánticum,
+Agni sequens vestígia.
+Horum Datóri múnerum
+Sit laus, decúsque pérpetim:
+Qui trinus unus ómnia
+Regit Deus per seecula
+Amen.
+
+[Lectio1]
+Lectio i
+De Cánticis Canticórum
+Cap. 2, 1-17
+Ego flos campi, et lílium convállium.
+Sicut lílium inter spinas, sic amíca
+mea inter fílias. Sicut malus inter
+ligna silvárum, sic diléctus meus
+inter fílios. Sub umbra illíus, quem
+desideráveram, sedi : et fructus ejus
+dulcis gú uri meo. Introdúxit me in
+cellam vináriam, ordinávit in me
+caritátem. Fulcíte me flóribus,
+stipáte me malis, quia amóre
+lángueo. Læva ejus sub cápite meo,
+et déxtera illíus amplexábitur me.
+Adjúro vos, fíliæ, Jerúsalem, per
+cápreas, cervósque campórum, ne
+suscitétis, neque evigiláre faciátis
+diléctam, quoadúsque ipsa velit,
+
+[Responsory1]
+R. A éndite, pópuli, de longe :
+Dóminus ab utero vocávit me : de
+ventre matris meæ, * Recordátus est
+nóminis mei. V. Magnus Pastor
+óvium in sánguine testaménti ætérni
+próprias oves vocat nominátim et
+edúcit eas. Recordátus est.
+
+[Lectio2]
+Lectio ij
+De libro Proverbiórum
+Cap. 8, 17-23
+Ego diligéntes me díligo: et qui mane
+vígilant ad me, invénient me.
+Mecum sunt divítiæ et glória, opes
+supérbæ et justítia. Mélior est enim
+fructus meus auro, et lápide
+pretióso, et genímina mea argénto
+elécto. In viis justítiæ ámbulo, in
+médio semitárum judícii, ut ditem
+diligéntes me, et thesáuros eórum
+répleam. Dóminus possédit me in
+inítio viárum suárum, ántequam
+quidquam fáceret a princípio. Ab
+ætérno ordináta sum, et ex antíquis,
+ántequam terra fieret.
+
+[Responsory2]
+R. Datum est Rosa nomen mélius a
+fíliis et filiábus, nomen novum. *
+Quod os Dóminæ nominávit. V.
+Dabo illi cálculum cándidum, et in
+cálculo nomen novum. Quod os
+Dóminæ.
+
+[Lectio3]
+Lectio iij
+De libro Ecclesiástici
+Cap. 39, 17-21
+Obaudíte me, divíni fructus, et quasi
+rosa plantáta super rivos aquárum
+fructificáte. Quasi Líbanus odórem
+suavitátis habéte. Floréte flores,
+quasi lílium, et date odórem, et
+frondéte in grátiam, et collaudáte
+cánticum, et benedícite Dóminum in
+opéribus suis. Date nómini ejus
+magnificéntiam, et confitémini illi in
+voce labiórum vestrórum, et in
+cánticis labiórum et cítharis, et sic
+dicétis in confessióne : ópera Dómini
+univérsa bona valde.
+
+[Responsory3]
+R. Ego quasi storax, et gálbanus, et
+quasi Líbanus non incísus vaporávi
+habitatiónem meam : * Quasi
+bálsamum non mixtum : * Odor
+meus. V. Dedit Indica Rosa odórem
+suavitátis, et domus impléta est ex
+odóre unguénti. Quasi Glória Patri.
+Odor.
+
+[Lectio4]
+Lectio iv
+Ex Actis, et Bulla Beatif.
+Primus Américæ Meridionális flos
+sanctitátis, virgo Rosa, christiánis
+paréntibus Limæ progénita, mox ab
+incunábulis cláruit futúræ
+sanctimóniæ indíciis. Nam vultus
+infántis, mirabíliter in rosæ effigiem
+transfigurátus, huic nómini
+occasiónem dedit, cui póstea Virgo
+Deípara cognómen adjécit, jubens
+vocári deínceps. Rosam a sancta
+María. Quinquénnis votum
+perpétuæ virginitátis emísit.
+Adúltior, ne a paréntibus ad núptias
+cogerétur, clam síbimet
+venustíssimam cápitis cæsáriem
+præscídit. Jejúniis supra humánum
+modum addícta, íntegras
+Quadragésimas transégit pane
+ábstinens, ac diétim solis quinque
+gránulis mali cítrini víctitans.
+
+[Responsory4]
+R. Non conferétur hæc Rosa tinctis
+Indiæ colóribus, nec dábitur aurum
+obrízum pro ea : * Quóniam omne
+aurum in comparatióne illíus aréna
+est exígua. V. Glória, et divítiæ in
+domo ejus, et justítia ejus manet in
+sæculum sæculi. Quóniam.
+
+[Lectio5]
+Lectio v
+Hábitu tértii órdinis sancti Domínici
+assúmpto, prístinas vitæ austeritátes
+duplicávit. Oblóngo, asperimóque
+cilício sparsim minúsculas acus
+innéxuit : sub velo corónam, densis
+acúleis intrórsus obarmátam,
+intérdiu noctúque gestávit. Sanctæ
+Catharínæ Senénsis árdua premens
+vestígia, caténa férrea, tríplici nexu
+circumdúcta, lumbos cinxit.
+Léctulum sibi e truncis nodósis
+compósuit, horúmque vácuas
+commissúras fragmínibus testárum
+implévit. Céllulam sibi
+angustíssimam struxit in extrémo
+horti ángulo : ubi cæléstium
+contemplatióni dédita, crebris
+disciplínis, inédia, vigíliis
+corpúsculum exténuans, at spíritu
+vegetáta, larvas dæmonum,
+frequénti certámine victrix,
+impávide protrívit ac superávit.
+
+[Responsory5]
+R. Fecit sibi secrétum cubículum, in
+quo clausa morabátur, et habens
+super lumbos suos cilícium, *
+Jejunábat ómnibus diébus vitæ suæ.
+V. Virgo Rosa cogitábat quæ Dómini
+sunt: ut esset sancta córpore et
+spíritu. Jejunábat.
+
+[Lectio6]
+Lectio vi
+Ægritúdinun torméntis,
+domesticórum insúltibus,
+linguárum mórsibus dire agitáta,
+nondum satis pro mérito se affligi
+querebátur. Per quíndecim annos, ad
+plúsculas horas desolatióne spíritus
+et ariditáte misérrime contabéscens,
+forti ánimo tulit agónes omni morte
+amarióres. Exínde cœpit supérnis
+abundáre delíciis, illustrári
+visiónibus, colliquéscere seráphicis
+ardóribus Angelo tutelári, sanctæ
+Catharínæ Senénsi, Virgini Deíparæ
+inter assíduas apparitiónes mire
+familiáris, a Christo has voces audíre
+méruit: Rosa cordis mei, tu mihi
+sponsa esto. Dénique Sponsi hujus
+paradíso felíciter invéctam,
+plurimísque ante et post óbitum
+miráculis corúscam, Clemens
+Décimus Póntifex Máximus
+sanctárum Vírginum catálogo ritu
+solémni adscrípsit.
+
+[Responsory6]
+R. Benedícta tu, Fília, a Deo excélso :
+quia non pepercísti ánimæ tuæ
+propter angústias et tribulatiónem
+géneris tui : * Sed subvenísti ruínæ :
+* Ante conspéctum Dei nostri. V.
+Curásti gentem tuam, et liberásti
+eam a perditióne. Sed subvenísti
+ruínæ. Glória Patri. Ante
+conspéctum.
+
+[Lectio7]
+Lectio vij
+Léctio sancti Evangélii secúndum
+Ma hæum
+Cap. 13, 31-35
+In illo témpore : Dixit Jesus turbis
+parábolam hanc : Símile est regnum
+cælórum grano sinápis, quod
+accipiens homo seminávit in agro
+suo. Et réliqua.
+Homilía sancti Petri Chrysólogi
+In cap. 13 Ma h.
+Audístis, fratres, quemádmodum
+grano sinápis tota regni cæléstis
+comparáta est magnitúdo. Quærens
+Christus in cælo, et in terra, nihil
+invénit nisi granum sinápis, in quo
+poténtiam totam supérnæ
+dominatiónis inclúdat : et illud
+regnum singularitáte potens,
+æternitáte felix divinitáte fulgens,
+diffúsum toto cælo, tota terra
+dilatátum, in grano sinápis coárctat,
+et cogit angústias. Spes ista est
+credéntium tota ? Exspectátio ista est
+fidélium summa ? Ista est felícitas
+vírginum, longis continéntiæ
+labóribus comparáta? Fratres, non
+fácile Domínicis moveámur in dictis.
+Nam si infírmum Dei fórtius est
+homínibus; hoc mínimum Dei tota
+magnitúdine mundi magnificéntius
+invenítur : si modo hoc granum
+sinápis nos sic nostris seminémus in
+méntibus, ut intelligéntiæ nobis
+magnam in árborem crescat.
+
+[Responsory7]
+R. Diléxit Rosa decórem domus Dei,
+et locum habitatiónis glóriæ ejus:
+ídeo * Requiéscet in monte sancto
+eius. V. Non discedébat de templo,
+jejúniis et obsecratiónibus sérviens
+nocte et die. Requiéscet.
+
+[Lectio8]
+Lectio viij
+Grani ergo sinápis instar est regnum
+Dei, quod de supérnis affértur verbo,
+suscípitur audítu, fide séritur,
+credulitáte radicátur, spe crescit,
+confessióne diffúnditur, virtúte
+ténditur, et dilatátur in ramos, ad
+quos vocat aves cæli, id est,
+spirituáles sensus, atque in ipsis eas
+quiéta súscipit mansióne. Véniat
+hæréticus, véniat, quia redeúntibus
+Ecclésiæ semper patéscit ingréssus.
+Véniat, áudiat et pietáti Domínicæ
+jam désinat oblatráre. Si cæléstis
+regni majéstas omnis ad grani
+sinápis similitúdinem venit, quid
+quæritur, quod Deus ad hóminem,
+Dóminus servi descéndit ad
+formam? Sic enim venit, ut tibi
+totum per fidem crésceret, cui jam
+totum defécerat per naturam.
+
+[Responsory8]
+R. Veni de Líbano, Rosa cordis mei,
+veni de Líbano, Sponsa : * Veni,
+coronáberis de vértice Sanir et
+Hermon. V. Média nocte clamor
+factus est: Ecce Sponsus venit. Veni.
+Glória Patri. Veni.
+
+[Lectio9]
+Lectio ix
+Sed a éndite, quia Christus est
+regnum cælórum, qui velut granum
+sinápis, in hortum virgínei córporis
+missus, orbe toto Crucis in árborem
+crevit ac tantum dedit fructus sui
+sapórem, cum téritur passióne, ut
+quidquid est vitále, suo saporáret et
+condíret a áctu. Nam sicut in
+integritáte grani sinápis virtus
+habétur occúlta ; appáret vero virtus
+ejus vehementíssime, si terátur : ita
+Christus córpore teri vóluit, qui
+suam nóluit latére virtútem. Et nos,
+fratres, terámus istud granum
+sinápis, ut ejus vim in hac
+similitúdine sentiámus. Terámus
+granum illud, ut ora nostra fervéntia
+vívida fructu sui sapóris succéndat,
+et flammétur in péctore: atque
+nostræ ignorántiæ totum nobis
+áuferat sua degustatióne fastídium.
+Te Deum laudámus.
